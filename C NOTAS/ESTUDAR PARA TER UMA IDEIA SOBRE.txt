@@ -1,0 +1,13 @@
+
+               ESTUDAR PARA TER UMA IDEIA SOBRE
+
+1-Servidores                                SERVER(x)
+2-Versonamento de código / Git                 GIT(x)
+4-Base de dados
+5-Mask Ql (Base relacional)
+6-Monki De Beko (Base não relacionada)
+7-Api
+8-Escalabidade
+9-Segurança
+10-Fundamento da linguagem
+11-Semântica

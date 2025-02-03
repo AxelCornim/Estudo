@@ -1,0 +1,18 @@
+FTP (File Transfer Protocol): É usado para transferir arquivos entre computadores por meio de uma rede, permitindo que um computador acesse pastas em outro de forma direta.
+
+SSH (Secure Shell): Proporciona uma conexão segura para acessar servidores remotos e realizar tarefas administrativas, como gerenciamento de arquivos e processos. Ele criptografa as informações transmitidas, garantindo segurança contra interceptações.
+
+Telnet: É um protocolo cliente-servidor usado para comunicação entre computadores em uma rede. Permite acesso remoto a servidores, mas não oferece segurança para as informações transmitidas.
+
+SMTP (Simple Mail Transfer Protocol): Responsável pelo envio de e-mails, estabelecendo regras de comunicação entre servidores para garantir que as mensagens cheguem aos destinatários.
+
+DNS (Domain Name System): Traduz nomes de domínio em endereços IP, permitindo que os computadores localizem os sites que digitamos nos navegadores.
+DHCP (Dynamic Host Configuration Protocol): Atribui automaticamente endereços IP e outros parâmetros aos dispositivos que se conectam à rede, facilitando a configuração e o acesso à internet.
+
+TFTP (Trivial File Transfer Protocol): Usado para transferir pequenos arquivos entre hosts em uma rede local. É mais simples que outros protocolos e não requer autenticação.
+
+HTTP (Hypertext Transfer Protocol): Padrão usado para transmitir páginas web e dados na internet. Define como os navegadores e servidores se comunicam para exibir conteúdo na web.
+
+POP (Post Office Protocol): Usado para baixar e-mails do servidor para o cliente de e-mail. As mensagens são excluídas do servidor após o download.
+
+NTP (Network Time Protocol): Sincroniza relógios de computadores em redes, garantindo que todos os dispositivos tenham a mesma hora.

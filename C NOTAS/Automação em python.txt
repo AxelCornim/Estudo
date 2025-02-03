@@ -1,0 +1,17 @@
+
+			Automação em python
+
+ 1-ESTUDAR PARA TER UMA IDEIA SOBRE
+ 2-Automação de processos de negócios
+
+ 3-Automação de testes: Existem bibliotecas como o
+unittest e pytest que facilitam a criação e execução de testes automatizados.
+
+ 4-Automação web: como web scraping (extração de dados de sites),
+ automação de interações em sites, preenchimento automático de formulários,
+ realizar testes de interface do usuário, entre outros.
+ Bibliotecas como o Selenium e BeautifulSoup são populares para essas tarefas.
+ 
+ 5-Automação de redes : como configuração de dispositivos de rede, 
+verificação de status de rede, análise de logs, monitoramento de rede, 
+entre outros. Bibliotecas como paramiko, netmiko e pySNMP são úteis nesse contexto.

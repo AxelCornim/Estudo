@@ -1,0 +1,31 @@
+1-Definindo o tipo de rede:
+ Redes tipo moden e o roteador onde cada um tem sua funcionalidade dentro da rede, importante de um servidor/p um cliente. Linha ponto a ponto rede pequena configurada sem admin. Como servidor funciona rede ponta a ponta.
+
+2-Criando uma rede doméstica:
+ Configuração de modem, oque pode acontecer ao resetar modem de bairo. Configurando modem (cabeamento), desabilitando modem deixando gateway como unica rede para ter menos interferencia de rede,(menos frequencia brigando por sinal).
+
+3-Configuração Internet e rede local no roteador:
+ Descobrindo IP roteador, configuração rapida do roteador configurando roteador mais a frente.
+IP DINAMICO - Onde roteador da IP para maquina e tudo automatico
+IP ESTATICO - Onde alguem vai configurar especificamente rede
+PPPoE - Onde tem um servidor para autenticar IP
+acabando configuramento de rede com base IP e dns de rede.
+
+4-Classes IP, Configuração de rede local e DHCP:
+ Revendo parte conteudo do curso de endereçamento IPv4 e configurando para rede ir direto para pc
+
+5-Como testar a Internet e a conexão de Rede:
+ Teste comando ping,latencia e demora de volta para dados da rede onde pode descobrir se fornecedor de rede ou se está dando erro ou se problema e sua maquina ou disposito de rede.
+
+6-Como testar a rota da conexão com a Internet:
+ Explicando problema de interferencia ou perde pacote e problema de rede , DHCP não funcion(a pipa), explicando onde pode ser erro operadora é por fim o que é CDN busca onde tem servidor mais proximo pra ter mandar dados.(servidores de dados expalhados para te mandar dado sempre do lugar mais proximo facilitando acesso rapido)
+
+7-Como melhorar o acesso à Internet (DNS e IPCONFIG):
+ DNS converte número em nome onde dns publico melhora pelo acesso ser mais facil, reiniando dns/configurando/verificando dns/limpando configurações da placa de rede é por fim renovação de IP
+
+8-Principais protocolos e portas de comunicação:
+ Os protocolos de rede permitem que os dispositivos estabeleçam uma conexão entre si antes de começarem a enviar dados. Isso inclui a troca de informações de configuração e a verificação da identidade dos dispositivos3. Além disso, os protocolos dividem os dados em pacotes menores para facilitar sua transmissão pela rede3.
+
+Sem protocolos, as informações transmitidas não seriam verificadas, o que não garantiria que elas chegassem sem erros. Portanto, eles atuam como um filtro de controle de qualidade dos dados transmitidos na rede1. Além disso, eles são responsáveis por definir as rotas de tráfego e realizar a transmissão dos dados entre a origem e o destino2.
+
+Existem vários tipos de protocolos de rede, como o TCP/IP, HTTP, FTP, entre outros, cada um com suas próprias regras e funções específicas1. Portanto, entender os protocolos de rede é essencial para a concepção, implementação e manutenção de soluções computacionais e de comunicação de forma eficiente e segura2.

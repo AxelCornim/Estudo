@@ -1,0 +1,19 @@
+1-PyAutoGUI: Permite que seus scripts Python controlem o mouse e o teclado para automatizar as interações com outros aplicativos1.
+
+2-PyWinAuto: Conjunto de módulos Python para automatizar a GUI (Interface Gráfica do Usuário) do Microsoft Windows1.
+
+3-Selenium: Permite definir testes e detectar automaticamente os resultados desses testes em um navegador web1.
+
+4-Splinter: Ferramenta de código aberto para testar aplicativos web usando Python1.
+
+5-Scrapy: Framework de código aberto para extrair os dados de websites1.
+
+6-Windmill: Framework de teste de UI (Interface do Usuário) da web de código aberto1.
+
+7-Pytest: Torna mais fácil escrever pequenos testes de softwares, mas pode ser escalonado para suportar testes funcionais complexos para aplicativos e bibliotecas1.
+
+8-ReportLab: Framework usado para a criação de documentos PDF baseados em dados complexos e gráficos vetoriais personalizados1.
+
+Esses pacotes são úteis para uma variedade de tarefas, desde a automação de tarefas na interface gráfica do Windows, MacOS ou Linux, passando pela automação da extração de dados via web scraping, extração de dados de arquivos pdf, testes de software, até automação de planilhas do Excel1.
+
+ LINK ORIGIN: https://blog.dsacademy.com.br/15-pacotes-python-para_automacao/

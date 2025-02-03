@@ -1,0 +1,26 @@
+Pratica 2
+
+jogo da Velha com matriz:
+
+Descrição no zap:
+
+ Sendo feito em turno de X e O cada número selecionado
+deve ser substituir pelo X ou pelo O.
+
+Exemplo:
+
+	1 | 2 | 3
+	4 | 5 | 6
+	7 | 8 | 9
+
+ É ordem deve ser X para O e revezando até que um ganhe um jogo
+da velha que quando for vez de X selecionar, 1 aconteca isso.
+
+Exemplo:
+
+	X | 2 | 3
+	4 | 5 | 6
+	7 | 8 | 9
+
+Caso os X ou O forme uma linha de 3 ganha linha poder tanto efetuada na horizontal
+vertical e diagonal.

@@ -1,0 +1,26 @@
+Pratica 1
+
+MENU DE OPCOES
+=============
+1-Mostrar a Matriz
+2-DIagonal Principal
+3-Triangulo Superior
+4-Triangulo Inferior
+5-Sair
+======OPCAO:
+Exemplo: 2
+
+Matriz 4x4 Depois uma tamanho que usuario desejar.
+
+1-Uma matriz padrão 4x4.
+2-Uma matriz principal deve ser mostrada em cima de uma 4x4.
+3-Uma matriz com triangulo superior deve ser mostrada em cima de uma matriz 4x4.
+4-Uma matriz com triangulo inferior deve ser mostrada em cima de uma matriz 4x4.
+5-Sair (Break na linha do código do while)
+
+	ORDEM 
+1- Criar Matriz 4x4
+2- Perguntar usuario quais númeors quer para prencher matriz
+3- Criar predefinições de matrizes que usuario desejar ver
+4- Mostrar somentes partes que usuario desejar ver
+

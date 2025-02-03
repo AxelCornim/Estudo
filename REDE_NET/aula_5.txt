@@ -1,0 +1,5 @@
+ping -  É um comando
+latência - É o tempo de espera de resposta entre pontos
+ms - Medida de tempo
+ttl (time to live) - 0 a 255S
+ICMP - Protocolo de teste de conectividadeS
