@@ -111,4 +111,20 @@ area, tinta = litrao(comp, larg)
 print(f"Área tem como base {area:.2f} metros quadrados.")
 print(f"Serão nessesários {tinta:.2f} litros de tinta para pintar.")"""
 
- 
+def desconto(x):
+    desconto = 5
+    valor_desconto = (desconto / 100) * x   #Posso tambem executar função caso queira somente resultado fazendo
+    total_com_desconto = x - valor_desconto #def desconto(x): return x * 0.95
+    return total_com_desconto, valor_desconto
+
+# Entrada do usuário
+user = float(input("Digite o preço do produto: R$"))
+
+# Cálculo do Desconto
+total_com_desconto, valor_desconto = desconto(user) 
+
+# Saída Formatada
+system('cls')
+print(f"Valor do desconto (5%): R${valor_desconto:.2f}")
+print(f"Produto orginal {user:.2f}$ | Preço com desconto: R${total_com_desconto:.2f}")
+
