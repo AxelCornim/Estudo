@@ -127,3 +127,10 @@ total_com_desconto, valor_desconto = desconto(user)
 system('cls')
 print(f"Valor do desconto (5%): R${valor_desconto:.2f}")
 print(f"Produto orginal {user:.2f}$ | Preço com desconto: R${total_com_desconto:.2f}")"""
+
+"""def aumento(x):
+    return x * 1.15
+
+user = float(input("Digite salário para ver com aumento 25% R$"))   
+x = aumento(user)
+print(f"Seu sálario com aumento 15% fica R${x:.2f}")"""
