@@ -135,22 +135,20 @@ user = float(input("Digite salário para ver com aumento 25% R$"))
 x = aumento(user)
 print(f"Seu sálario com aumento 15% fica R${x:.2f}")"""
 
-"""def temperatura(celsius):
+""""def temperatura(celsius):
     # Converte celsius para Fahrentheit
     F = (celsius * 9/5) + 32
     return F
+# Titulo
+print("Conversor Grau Celsius para Grau Fahrenheit")
 while True:
-    # Titulo
-    print("Conversor Grau Celsius para Grau Fahrenheit")
     # Input de informação do usuario
     try:
         user = float(input("Digite temperatura em Celsius: "))
+        # Output informação com função sendo chamada dentro
+        print(f"{user:.1f}°C equivalem {temperatura(user):.1f}°F.")
         break
     # Tratamento de erro
     except ValueError:
-        print("Entrada inválida, digite somente números!")
-# Função sendo chamada
-F = temperatura(user)
-# Output informação
-print(f"{user:.1f}°C equivalem {F:.1f}°F.")"""
+        print("Entrada inválida, digite somente números!")"""
 
