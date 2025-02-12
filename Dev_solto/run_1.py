@@ -152,3 +152,21 @@ while True:
     except ValueError:
         print("Entrada inválida, digite somente números!")"""
 
+"""preco_dia = float(60)
+preco_km = float(0.15)
+def aluguem_carro(dias, km):
+    dia = dias * preco_dia
+    km = km * preco_km
+    return dia, km
+    
+while True:
+    try:
+        km = float(input("Quantos kilometros voçe percorreu: "))
+        dia = float(input("Quantos dias voçe percorreu: "))
+        break
+    except ValueError:
+        print("Digite somente números!")
+        
+dia, km = aluguem_carro(km, dia)
+tot = dia + km
+print(f"Custo total foi R${tot:.2f}")"""
