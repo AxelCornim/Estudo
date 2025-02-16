@@ -1,4 +1,5 @@
 from os import system
+from math import floor
 system('cls')
 
 """n1 = int(input("Digite valor X: ").strip())
@@ -171,3 +172,17 @@ dia, km = aluguem_carro(km, dia)
 tot = dia + km
 print(f"Custo total foi R${tot:.2f}")"""
 
+def porcao_inteira(x):
+    inteiro = floor(x)
+    return inteiro
+
+print((' ' * 2) + "Conversor para porções inteiras")
+while True:
+    try:
+        user = float(input("Digite número: "))
+        break
+    except ValueError:
+        print("Digite somente números!!!")
+    
+inteiro = porcao_inteira(user)
+print(f"A porção inteira de {user} é {inteiro}.")
