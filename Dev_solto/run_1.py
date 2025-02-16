@@ -170,3 +170,4 @@ while True:
 dia, km = aluguem_carro(km, dia)
 tot = dia + km
 print(f"Custo total foi R${tot:.2f}")"""
+
