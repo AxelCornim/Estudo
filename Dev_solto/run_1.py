@@ -172,7 +172,7 @@ dia, km = aluguem_carro(km, dia)
 tot = dia + km
 print(f"Custo total foi R${tot:.2f}")"""
 
-def porcao_inteira(x):
+"""def porcao_inteira(x):
     inteiro = floor(x)
     return inteiro
 
@@ -185,4 +185,5 @@ while True:
         print("Digite somente números!!!")
     
 inteiro = porcao_inteira(user)
-print(f"A porção inteira de {user} é {inteiro}.")
+print(f"A porção inteira de {user} é {inteiro}.")"""
+
