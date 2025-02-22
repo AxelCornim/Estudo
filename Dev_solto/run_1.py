@@ -1,5 +1,5 @@
 from os import system
-from math import floor
+import math
 system('cls')
 
 """n1 = int(input("Digite valor X: ").strip())
@@ -187,3 +187,25 @@ while True:
 inteiro = porcao_inteira(user)
 print(f"A porção inteira de {user} é {inteiro}.")"""
 
+def hipotenusa(n1, n2):
+    n3 = n1 * n1
+    n4 = n2 * n2
+    soma_catetos = n3 + n4
+    hipot = soma_catetos ** (1/2)
+    return hipot
+    
+while True:
+    print(' '*3+'Calculando Hipotenusa')
+    try:
+        C1 = float(input('Digite primeiro cateto: '))
+        C2 = float(input('Digite segundo cateto: '))
+        break
+    except ValueError:
+        print('Digite somente números')
+        
+x = 0
+hopott = math.sqrt(C1*C1 + C2*C2)
+
+hipot = hipotenusa(C1, C2)
+print(f'Hipotenusa de {C1:.1f} mais {C2:.1f}\nResultando em {hipot:.1f}')
+print(f'{hopott:.1f}')
