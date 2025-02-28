@@ -187,7 +187,7 @@ while True:
 inteiro = porcao_inteira(user)
 print(f"A porção inteira de {user} é {inteiro}.")"""
 
-def hipotenusa(n1, n2):
+"""def hipotenusa(n1, n2):
     n3 = n1 * n1
     n4 = n2 * n2
     soma_catetos = n3 + n4
@@ -202,10 +202,49 @@ while True:
         break
     except ValueError:
         print('Digite somente números')
-        
-x = 0
+
 hopott = math.sqrt(C1*C1 + C2*C2)
 
 hipot = hipotenusa(C1, C2)
 print(f'Hipotenusa de {C1:.1f} mais {C2:.1f}\nResultando em {hipot:.1f}')
-print(f'{hopott:.1f}')
+print(f'{hopott:.1f}')"""
+
+def hipot(n1, n2):
+    # Calcula a hipotenusa de um triângulo retângulo
+    return math.hypot(n1, n2)
+
+def factorial(n):
+    # Calcula o fatorial de um número
+    return 1 if n == 0 else n * factorial(n - 1)
+
+def seno_apo(x, termos=10):
+    # Aproxima o seno de x usando a série de Taylor
+    seno = 0 
+    for n in range(termos):
+        termo = ((-1)**n) * (x**(2*n + 1)) / factorial(2*n + 1)
+        seno += termo
+    return seno
+
+def cosseno_apo(x, termos=10):
+    # Aproxima o cosseno de x usando a série de Taylor
+    cosseno = 0
+    for n in range(termos):
+        termo = ((-1)**n) * (x**(2*n)) / factorial(2**n)
+        cosseno += termo
+        return cosseno
+
+while True:
+    print(' '*3 + 'Calculos hipotenusa, Seno é Cosseno')
+    try:
+        cat1 = float(input('Digite Cateto: '))
+        cat2 = float(input('Digite outro Cateto: '))
+        break
+    except ValueError:
+        print('Digite somente números')
+
+hipotenusa = hipot(cat1, cat2)
+angulo_graus = 30
+angulo_radianos = math.radians(angulo_graus)
+print(f'Hipotenusa exata: {hipotenusa:.1f}')
+print(f'Seno aproximado: {seno_apo(angulo_radianos):.1f}')
+print(f'Cosseno aproximado: {cosseno_apo(angulo_radianos):.1f}')
