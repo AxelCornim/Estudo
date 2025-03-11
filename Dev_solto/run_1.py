@@ -209,7 +209,7 @@ hipot = hipotenusa(C1, C2)
 print(f'Hipotenusa de {C1:.1f} mais {C2:.1f}\nResultando em {hipot:.1f}')
 print(f'{hopott:.1f}')"""
 
-def hipot(n1, n2):
+"""def hipot(n1, n2):
     # Calcula a hipotenusa de um triângulo retângulo
     return math.hypot(n1, n2)
 
@@ -224,7 +224,7 @@ def seno_apo(x, termos=10):
         termo = ((-1)**n) * (x**(2*n + 1)) / factorial(2*n + 1)
         seno += termo
     return seno
-
+z
 def cosseno_apo(x, termos=10):
     # Aproxima o cosseno de x usando a série de Taylor
     cosseno = 0
@@ -247,4 +247,5 @@ angulo_graus = 30
 angulo_radianos = math.radians(angulo_graus)
 print(f'Hipotenusa exata: {hipotenusa:.1f}')
 print(f'Seno aproximado: {seno_apo(angulo_radianos):.1f}')
-print(f'Cosseno aproximado: {cosseno_apo(angulo_radianos):.1f}')
+print(f'Cosseno aproximado: {cosseno_apo(angulo_radianos):.1f}')"""
+
