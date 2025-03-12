@@ -1,4 +1,5 @@
 from os import system
+import random
 import math
 system('cls')
 
@@ -249,3 +250,11 @@ print(f'Hipotenusa exata: {hipotenusa:.1f}')
 print(f'Seno aproximado: {seno_apo(angulo_radianos):.1f}')
 print(f'Cosseno aproximado: {cosseno_apo(angulo_radianos):.1f}')"""
 
+lista_alunos = list()
+print(" "*3 + "Alunos Sorteados a Apagar quadro")
+for i in range(0, 4):
+    x = input(str("Digite nome aluno: "))
+    lista_alunos.append(x)
+
+aluno_selecionado = random.choice(lista_alunos)
+print(f"Aluno Selecionado para limpar quadro foi: {aluno_selecionado}")
