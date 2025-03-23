@@ -250,11 +250,32 @@ print(f'Hipotenusa exata: {hipotenusa:.1f}')
 print(f'Seno aproximado: {seno_apo(angulo_radianos):.1f}')
 print(f'Cosseno aproximado: {cosseno_apo(angulo_radianos):.1f}')"""
 
-lista_alunos = list()
+"""lista_alunos = list()]
 print(" "*3 + "Alunos Sorteados a Apagar quadro")
 for i in range(0, 4):
     x = input(str("Digite nome aluno: "))
     lista_alunos.append(x)
 
 aluno_selecionado = random.choice(lista_alunos)
-print(f"Aluno Selecionado para limpar quadro foi: {aluno_selecionado}")
+print(f"Aluno Selecionado para limpar quadro foi: {aluno_selecionado}")"""
+
+"""def sorteados(lista_alunos):
+    lista_alunos.sort()
+    return lista_alunos
+
+lista = []
+print("Lista alunos que vão apagar quadro semana")
+
+while True:
+    try:
+        x = int(input("Digite quantos alunos vão limpar quadro: "))
+        for i in range(x):
+            y = input(f"{i+1} Digite nome do aluno: ")
+            lista.append(y)
+        break
+    except ValueError:
+        print("Digite apenas números!!!")
+
+lista_alunos = sorteados(lista)
+print(lista_alunos)"""
+
