@@ -279,3 +279,17 @@ while True:
 lista_alunos = sorteados(lista)
 print(lista_alunos)"""
 
+import pygame
+
+# Inicializa o mixer
+pygame.mixer.init()
+
+# Carrega o arquivo de áudio
+pygame.mixer.music.load('Caminho do audio.mp3')
+
+# Reproduz o áudio
+pygame.mixer.music.play()
+
+# Mantém o programa rodando enquanto o áudio toca
+while pygame.mixer.music.get_busy():
+    pygame.time.Clock().tick(10)
