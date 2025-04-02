@@ -279,7 +279,7 @@ while True:
 lista_alunos = sorteados(lista)
 print(lista_alunos)"""
 
-import pygame
+"""import pygame
 
 # Inicializa o mixer
 pygame.mixer.init()
@@ -292,4 +292,32 @@ pygame.mixer.music.play()
 
 # Mantém o programa rodando enquanto o áudio toca
 while pygame.mixer.music.get_busy():
-    pygame.time.Clock().tick(10)
+    pygame.time.Clock().tick(10)"""
+    
+def maisculo(texto):
+    maisc = maisculo.upper()
+    return maisc
+
+def minusculo(texto):
+    minus = minusculo.lower()
+    return minus
+
+def total_letras(texto):
+    tot_letras = total_letras(len(texto.split(0)))
+    return tot_letras
+
+def letras_primeiro(texto):
+    letras_first = letras_primeiro(len(texto.split(0)))
+    return letras_first
+
+while True:
+    try:
+        user = str(input("Digite seu nome completo: "))
+        break
+    except ValueError:
+        print('Digite somente nomes!! ')
+        
+print(f"Seu nome maiúsculo fica {maisculo(user)}")
+print(f"Seu nome minúsculo fica {minusculo(user)}")
+print(f'Ao todo seu nome tem {total_letras(user)} letras')
+print(f"Seu primeiro é {user} é tem {letras_primeiro(user)} letras")
