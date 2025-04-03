@@ -294,21 +294,17 @@ pygame.mixer.music.play()
 while pygame.mixer.music.get_busy():
     pygame.time.Clock().tick(10)"""
     
-def maisculo(texto):
-    maisc = maisculo.upper()
-    return maisc
+"""def maisculo(texto):
+    return texto.upper()
 
 def minusculo(texto):
-    minus = minusculo.lower()
-    return minus
+    return texto.lower()
 
 def total_letras(texto):
-    tot_letras = total_letras(len(texto.split(0)))
-    return tot_letras
+    return len(texto)
 
 def letras_primeiro(texto):
-    letras_first = letras_primeiro(len(texto.split(0)))
-    return letras_first
+    return len(texto.split()[0])
 
 while True:
     try:
@@ -320,4 +316,5 @@ while True:
 print(f"Seu nome maiúsculo fica {maisculo(user)}")
 print(f"Seu nome minúsculo fica {minusculo(user)}")
 print(f'Ao todo seu nome tem {total_letras(user)} letras')
-print(f"Seu primeiro é {user} é tem {letras_primeiro(user)} letras")
+print(f"Seu primeiro é {user.split()[0]} é tem {letras_primeiro(user)} letras")"""
+
