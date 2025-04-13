@@ -318,3 +318,26 @@ print(f"Seu nome minúsculo fica {minusculo(user)}")
 print(f'Ao todo seu nome tem {total_letras(user)} letras')
 print(f"Seu primeiro é {user.split()[0]} é tem {letras_primeiro(user)} letras")"""
 
+def leitura(numeros):
+    x1 = numeros[0]
+    x2 = numeros[1]
+    x3 = numeros[2]
+    x4 = numeros[3]
+    return x1, x2, x3, x4
+
+
+while True:
+    try:
+        user = input('Informe número 0-9999:  ')
+        if user.isdigit() and 0 <= int(user) <= 9999:
+            break
+    except ValueError:
+        print("digite somente números!!!")
+        
+x1, x2, x3, x4 = leitura(user)
+
+print(f"Analizando número {user}")
+print(f"Milhar: {x1}")
+print(f"Centena: {x2}")
+print(f"Dezena: {x3}")
+print(f"Unidade: {x4}")
