@@ -318,14 +318,16 @@ print(f"Seu nome minúsculo fica {minusculo(user)}")
 print(f'Ao todo seu nome tem {total_letras(user)} letras')
 print(f"Seu primeiro é {user.split()[0]} é tem {letras_primeiro(user)} letras")"""
 
-def leitura(numeros):
-    x1 = numeros[0]
-    x2 = numeros[1]
-    x3 = numeros[2]
-    x4 = numeros[3]
+"""def leitura(numeros):
+    # prenche número para não aja erros de faltar autofill
+    numero_prenchido = numeros.zfill(4)
+    x1 = numero_prenchido[0]
+    x2 = numero_prenchido[1]
+    x3 = numero_prenchido[2]
+    x4 = numero_prenchido[3]
     return x1, x2, x3, x4
 
-
+# Loop para certificar usuario de digitar somente números de 0 até 9999
 while True:
     try:
         user = input('Informe número 0-9999:  ')
@@ -334,10 +336,13 @@ while True:
     except ValueError:
         print("digite somente números!!!")
         
+# Chamando a função
 x1, x2, x3, x4 = leitura(user)
 
+# Output da mensagem
 print(f"Analizando número {user}")
 print(f"Milhar: {x1}")
 print(f"Centena: {x2}")
 print(f"Dezena: {x3}")
-print(f"Unidade: {x4}")
+print(f"Unidade: {x4}")"""
+
