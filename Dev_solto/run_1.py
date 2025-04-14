@@ -346,3 +346,19 @@ print(f"Centena: {x2}")
 print(f"Dezena: {x3}")
 print(f"Unidade: {x4}")"""
 
+def santis(cidade):
+    cidade = cidade.upper()
+    nome_cidade = "SANTOS" in cidade
+    return nome_cidade
+
+while True:
+    try:
+        user = str(input("Digite nome sua cidade: "))
+        break
+    except ValueError:
+        print('Digite somente nomes com letras!!! ')
+        
+nome_cidade = santis(user)
+
+print(nome_cidade)
+
