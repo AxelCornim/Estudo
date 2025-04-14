@@ -346,7 +346,7 @@ print(f"Centena: {x2}")
 print(f"Dezena: {x3}")
 print(f"Unidade: {x4}")"""
 
-def santis(cidade):
+"""def santis(cidade):
     cidade = cidade.upper()
     nome_cidade = "SANTOS" in cidade
     return nome_cidade
@@ -361,4 +361,23 @@ while True:
 nome_cidade = santis(user)
 
 print(nome_cidade)
+"""
 
+def sobrenome(nome):
+    nome = nome.upper()
+    silva = 'SILVA' in nome
+    return silva
+
+while True:
+    print(''*3 + 'Verificador se contém nome Silva')
+    try:
+        user = str(input('Digite seu nome completo: '))
+        break
+    except ValueError:
+        print('Digite somente nomes!!! ')
+
+silva = sobrenome(user)
+if silva == True:
+    print(f"Nome {user} contém no nome Silva.")
+else:
+    print(f'Nome {user} não contém Silva no nome.')
