@@ -363,7 +363,7 @@ nome_cidade = santis(user)
 print(nome_cidade)
 """
 
-def sobrenome(nome):
+"""def sobrenome(nome):
     nome = nome.upper()
     silva = 'SILVA' in nome
     return silva
@@ -380,4 +380,27 @@ silva = sobrenome(user)
 if silva == True:
     print(f"Nome {user} contém no nome Silva.")
 else:
-    print(f'Nome {user} não contém Silva no nome.')
+    print(f'Nome {user} não contém Silva no nome.')"""
+
+def tot_a(letras):
+    texto_maiusculo = letras.upper()
+    tot_letrasA = texto_maiusculo.count("A")
+    primeiroA = texto_maiusculo.find("A")
+    ultimoA = texto_maiusculo.rfind("A")
+    return tot_letrasA, primeiroA, ultimoA
+
+while True:
+    try:
+        user = str(input("Digite uma frase: "))
+        break
+    except ValueError:
+        print('Digite somente frases com letras!!! ')
+        
+tot_letrasA, primeiroA, ultimoA = tot_a(user)
+
+if tot_letrasA > 0:
+    print(f'Na frase tem total {tot_letrasA} letras A.')
+    print(f'Primeira letras A aparece no index {primeiroA+1}')
+    print(f'Última letra A aparece no index {ultimoA+1}')
+elif tot_letrasA >= 0:
+    print('Na frase não contém letras A.')
