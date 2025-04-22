@@ -382,7 +382,7 @@ if silva == True:
 else:
     print(f'Nome {user} não contém Silva no nome.')"""
 
-def tot_a(letras):
+"""def tot_a(letras):
     texto_maiusculo = letras.upper()
     tot_letrasA = texto_maiusculo.count("A")
     primeiroA = texto_maiusculo.find("A")
@@ -403,4 +403,20 @@ if tot_letrasA > 0:
     print(f'Primeira letras A aparece no index {primeiroA+1}')
     print(f'Última letra A aparece no index {ultimoA+1}')
 elif tot_letrasA >= 0:
-    print('Na frase não contém letras A.')
+    print('Na frase não contém letras A.')"""
+    
+def first_name(nomecompleto):
+    primeiro_nome = nomecompleto.split()
+    return primeiro_nome[0]
+
+nome = []
+while True:
+    try:
+        user = str(input('Digite seu nome: ')).strip()
+        nome.append(user)
+        break
+    except ValueError:
+        print('Digite somente nomes com letras!!! ')
+        
+primeiro_nome = first_name(nome)
+print(f'Seu primeiro nome séria {primeiro_nome}')
