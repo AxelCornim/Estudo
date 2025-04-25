@@ -404,19 +404,23 @@ if tot_letrasA > 0:
     print(f'Última letra A aparece no index {ultimoA+1}')
 elif tot_letrasA >= 0:
     print('Na frase não contém letras A.')"""
-    
+
 def first_name(nomecompleto):
-    primeiro_nome = nomecompleto.split()
-    return primeiro_nome[0]
+    partes = nomecompleto.split()
+    return partes[0] if partes else 'Nome invalido' 
 
 nome = []
 while True:
     try:
         user = str(input('Digite seu nome: ')).strip()
-        nome.append(user)
+        if user and ' ' in user:
+            nome.append(user)
         break
     except ValueError:
         print('Digite somente nomes com letras!!! ')
-        
-primeiro_nome = first_name(nome)
-print(f'Seu primeiro nome séria {primeiro_nome}')
+    
+primeiro_nome = first_name(nome[0]) if  nome else 'Nenhum nome fornecido'
+
+print(f'\nNome completo: {user}')
+print(f'Seu primeiro nome é {primeiro_nome}')
+
