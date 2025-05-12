@@ -425,14 +425,12 @@ primeiro_nome = first_name(nome[0]) if  nome else 'Nenhum nome fornecido'
 print(f'\nNome completo: {user}')
 print(f'Seu primeiro nome é {primeiro_nome}')"""
 
-def sorteando(user):
+"""def sorteando(user):
     sorteando = random.randint(0, 5)
     if sorteando == user:
         print(f'Parabens voce acertou! Número era {sorteando}')
-    elif sorteando > user:
+    elif sorteando > user or sorteando < user:
         print(f'Voce chegou perto, errou por {sorteando - user}\n Número certo era {sorteando}\n Seu palpite foi {user}')
-    elif sorteando < user:
-        print(f'Seu palpite chegou perto, margem erro foi {sorteando - user}\n Número certo era {sorteando}\n Seu palpite foi {user}')
     return sorteando 
         
 while True:
@@ -445,4 +443,5 @@ while True:
     except ValueError:
         print('Digite somente números!!!')
         
-sorteando = sorteando(user)
+sorteando = sorteando(user)"""
+
