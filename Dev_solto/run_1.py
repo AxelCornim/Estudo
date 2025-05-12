@@ -1,6 +1,7 @@
 from os import system
 import random
 import math
+import clock
 system('cls')
 
 """n1 = int(input("Digite valor X: ").strip())
@@ -405,7 +406,7 @@ if tot_letrasA > 0:
 elif tot_letrasA >= 0:
     print('Na frase não contém letras A.')"""
 
-def first_name(nomecompleto):
+"""def first_name(nomecompleto):
     partes = nomecompleto.split()
     return partes[0] if partes else 'Nome invalido' 
 
@@ -422,5 +423,26 @@ while True:
 primeiro_nome = first_name(nome[0]) if  nome else 'Nenhum nome fornecido'
 
 print(f'\nNome completo: {user}')
-print(f'Seu primeiro nome é {primeiro_nome}')
+print(f'Seu primeiro nome é {primeiro_nome}')"""
 
+def sorteando(user):
+    sorteando = random.randint(0, 5)
+    if sorteando == user:
+        print(f'Parabens voce acertou! Número era {sorteando}')
+    elif sorteando > user:
+        print(f'Voce chegou perto, errou por {sorteando - user}\n Número certo era {sorteando}\n Seu palpite foi {user}')
+    elif sorteando < user:
+        print(f'Seu palpite chegou perto, margem erro foi {sorteando - user}\n Número certo era {sorteando}\n Seu palpite foi {user}')
+    return sorteando 
+        
+while True:
+    print(' '*3 + 'Sorteando Números\nVocê consegue acertar ?')
+    try:
+        user = int(input('Digite um número de 0/5: '))
+        system('cls')
+        if 0 <= user <= 5:
+            break
+    except ValueError:
+        print('Digite somente números!!!')
+        
+sorteando = sorteando(user)
