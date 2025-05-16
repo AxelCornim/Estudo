@@ -425,7 +425,7 @@ primeiro_nome = first_name(nome[0]) if  nome else 'Nenhum nome fornecido'
 print(f'\nNome completo: {user}')
 print(f'Seu primeiro nome é {primeiro_nome}')"""
 
-def carregando(pontos=3, espera=0.7):
+"""def carregando(pontos=3, espera=0.7):
     print("Aguarde", end="", flush=True)
     for _ in range(pontos):
         time.sleep(espera)
@@ -453,5 +453,23 @@ while True:
     except ValueError:
         print('Digite somente números!!!')
         
-sorteando = sorteando(user)
+sorteando = sorteando(user)"""
 
+def calcular_multa(velocidade):
+    if velocidade > 80:
+        excesso = velocidade - 80
+        valor_multa = excesso * 7.00
+        print(f'Você foi multado em R${valor_multa:.2f}.\nPassou {excesso:.2f} km/h acima do limite permitido.')
+        return excesso, valor_multa # Retorna multa se houver
+    else:
+        print(f'Você passou a Km/h {velocidade:.2f}\n Boa viagem!')
+        return None, None # Retorna nada sem multas
+
+while True:
+    try:
+        velocidade = float(input('Digite Sua velocidade (Km/h): '))
+        system('cls')
+        excesso, multa = calcular_multa(velocidade)
+        break
+    except ValueError:
+        print('Digite somente velocidade usando números!!!')
