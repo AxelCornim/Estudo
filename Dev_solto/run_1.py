@@ -364,7 +364,7 @@ nome_cidade = santis(user)
 print(nome_cidade)
 """
 
-"""def sobrenome(nome):
+"""def sobrenome(nome): 
     nome = nome.upper()
     silva = 'SILVA' in nome
     return silva
@@ -455,7 +455,7 @@ while True:
         
 sorteando = sorteando(user)"""
 
-def calcular_multa(velocidade):
+"""def calcular_multa(velocidade):
     if velocidade > 80:
         excesso = velocidade - 80
         valor_multa = excesso * 7.00
@@ -472,4 +472,22 @@ while True:
         excesso, multa = calcular_multa(velocidade)
         break
     except ValueError:
-        print('Digite somente velocidade usando números!!!')
+        print('Digite somente velocidade usando números!!!')"""
+
+def par_impar(user):
+    if user % 2 == 0:
+        print(f'Número {user} é par!')
+    else:
+        print(f'Número {user} é impar!')
+    return user
+
+print(' '*3 + 'Verificador de númeors pares é impares')
+while True:
+    try:
+        entrada = int(input('Digite um número (inteiro): '))
+        break
+    except ValueError:
+        print('Digite somente números!!!')
+        
+system('cls')
+par_impar = par_impar(entrada)
