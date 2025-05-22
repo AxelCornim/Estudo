@@ -474,7 +474,7 @@ while True:
     except ValueError:
         print('Digite somente velocidade usando números!!!')"""
 
-def par_impar(user):
+"""def par_impar(user):
     if user % 2 == 0:
         print(f'Número {user} é par!')
     else:
@@ -490,4 +490,5 @@ while True:
         print('Digite somente números!!!')
         
 system('cls')
-par_impar = par_impar(entrada)
+par_impar = par_impar(entrada)"""
+
