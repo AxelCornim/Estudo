@@ -492,3 +492,22 @@ while True:
 system('cls')
 par_impar = par_impar(entrada)"""
 
+def viagem(carro):
+    if carro <= 200:
+        valor_corrida = carro * 0.5
+        print(f'Valor da corrida ficou em ${valor_corrida:.2f}Reais')
+    elif carro > 200:
+        valor_corrida = carro * 0.45
+        print(f'Para distancias mais longas temos desconto 5%\nFicou ${valor_corrida:.2f}Reais.')
+    return valor_corrida, carro
+        
+print(' '*7 + 'Uber')
+while True:
+    try:
+        motorista = float(input('Quantos Km\h foi percorrido: '))
+        break
+    except ValueError:
+        print('Digite somente números!!!')
+        
+viagem = viagem(motorista)
+
