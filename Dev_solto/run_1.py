@@ -492,7 +492,7 @@ while True:
 system('cls')
 par_impar = par_impar(entrada)"""
 
-def viagem(carro):
+"""def viagem(carro):
     if carro <= 200:
         valor_corrida = carro * 0.5
         print(f'Valor da corrida ficou em ${valor_corrida:.2f}Reais')
@@ -509,5 +509,24 @@ while True:
     except ValueError:
         print('Digite somente números!!!')
         
-viagem = viagem(motorista)
+viagem = viagem(motorista)"""
+
+"""def verificador_bissexto(ano):
+    system('cls')
+    print(' '*4 + 'Verificador ano bissexto')
+    if ano % 4 == 0:
+        print(f'{ano} é bissexto.')
+    else:
+        print(f'{ano} não é bissexto!')
+    return ano
+
+print(' '*4 + 'Verificador ano bissexto')
+while True:
+    try:
+        user = int(input('Digite aqui --> '))       
+        break
+    except ValueError:
+        print('Digite somente números inteiros, e somente númeoros!!!')
+        
+verificador_bissexto = verificador_bissexto(user)"""
 
