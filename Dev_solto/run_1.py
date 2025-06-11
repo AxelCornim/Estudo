@@ -568,9 +568,9 @@ while True:
         
 novo_salario = superior(funcionario)"""
 
-def triangulo(esquerdo, direito, base):
-    soma_lados = esquerdo, direito
-    if soma_lados > base:
+"""def triangulo(esquerdo, direito, base):
+    soma_lados = esquerdo + direito
+    if esquerdo + direito > base and esquerdo + base > direito and direito + base > esquerdo:
         print('Com dados fornecidos formase um triângulo.')
         return soma_lados
     else:
@@ -585,4 +585,5 @@ while True:
     except ValueError:
         print('Digite somente números!!!')
         
-triangulo = triangulo(esquerdo, direito, base)
+triangulo = triangulo(esquerdo, direito, base)"""
+
