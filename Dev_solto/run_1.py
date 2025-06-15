@@ -587,3 +587,25 @@ while True:
         
 triangulo = triangulo(esquerdo, direito, base)"""
 
+def emprestimo(valor_pedido, anos, salario):
+    valor_mes = valor_pedido / (anos*12)
+    valor_parcela = salario * 0.30
+    if valor_mes > valor_parcela:
+        print('O emprestimo foi Negado!')   
+    else:
+        print('Parabens seu emprestimo foi APROVADO!')
+    return valor_mes, valor_parcela
+        
+print(' '*3+'Banco Central da Mentira')
+print('='*30)
+
+while True:
+    try:
+        salario = int(input('Digite seu salario: '))
+        valor_pedido = int(input('Digite valor deseja o emprestimo: '))
+        anos = int(input('Em quantos anos deseja pagar: '))
+        break
+    except ValueError:
+        print('Por favor digite somente números!!!')
+        
+valor_mes, valor_parcela = emprestimo(valor_pedido, anos, salario)
