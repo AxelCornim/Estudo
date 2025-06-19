@@ -610,3 +610,37 @@ while True:
         
 valor_mes, valor_parcela = emprestimo(valor_pedido, anos, salario)"""
 
+"""def conversor_01(inteiro): # Caso queira conversao limpa pode usar
+    binario = bin(inteiro) # isto para remover prefixos [2:]
+    octal = oct(inteiro)
+    hexadecimal = hex(inteiro)
+    return binario, octal, hexadecimal
+
+print(' '*3+'Conversor de binário, octal e para hexadecimal')
+print('='*30)
+
+while True:
+    try:
+        inteiro = int(input('Escreva aqui: '))
+        break
+    except ValueError:
+        print('Digite somente números inteiros!!!')
+        
+while True:
+    try:
+        repeat = int(input('Digite 1 para binário | 2 para octal | 3 para hexadecimal\n(Digite 999 para sair)'))
+        if repeat == 1:
+            binario = conversor_01(inteiro)
+            print(f'{inteiro} Convertido para binário {binario[0]}')
+        elif repeat == 2:
+            octal = conversor_01(inteiro)
+            print(f'{inteiro} Convertido para octal {octal[1]}')
+        elif repeat == 3:
+            hexadecimal = conversor_01(inteiro)
+            print(f'{inteiro} Convertido para hexadecimal {hexadecimal[2]}')
+        elif repeat == 999:
+            print('Programa encerado!')
+            break
+    except ValueError:
+        print('Escreve só números!!!')"""
+        
