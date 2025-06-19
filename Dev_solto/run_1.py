@@ -587,7 +587,7 @@ while True:
         
 triangulo = triangulo(esquerdo, direito, base)"""
 
-def emprestimo(valor_pedido, anos, salario):
+"""def emprestimo(valor_pedido, anos, salario):
     valor_mes = valor_pedido / (anos*12)
     valor_parcela = salario * 0.30
     if valor_mes > valor_parcela:
@@ -608,4 +608,5 @@ while True:
     except ValueError:
         print('Por favor digite somente números!!!')
         
-valor_mes, valor_parcela = emprestimo(valor_pedido, anos, salario)
+valor_mes, valor_parcela = emprestimo(valor_pedido, anos, salario)"""
+
