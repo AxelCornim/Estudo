@@ -644,3 +644,25 @@ while True:
     except ValueError:
         print('Escreve só números!!!')"""
         
+
+from statistics import mean, median
+
+dados = []
+def valores(casa):
+    maior_num = max(casa)
+    minimo_num = min(casa)
+    if casa[0] == casa[1]:
+        print(f'Os números são iguais: {casa[0]}x{casa[1]}')
+    print(f'Maior número foi {maior_num}\nTendo seu menor número sendo {minimo_num}')
+    return maior_num, minimo_num
+
+while True:
+    try:
+        for i in range(0, 2):
+           numeros = int(input(f'({i}) Digite um número: '))
+           dados.append(numeros)
+        break
+    except ValueError:
+        print('Digite somente números! ')
+        
+valores = valores(dados)
