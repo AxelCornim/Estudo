@@ -645,7 +645,7 @@ while True:
         print('Escreve só números!!!')"""
         
 
-from statistics import mean, median
+"""from statistics import mean, median
 
 dados = []
 def valores(casa):
@@ -665,4 +665,29 @@ while True:
     except ValueError:
         print('Digite somente números! ')
         
-valores = valores(dados)
+valores = valores(dados)"""
+
+from datetime import datetime
+
+def alistamento(nascimento):
+    ano_atual = datetime.now().year
+    idade = ano_atual - nascimento
+    if idade > 18:
+        print(f'Você está atrasado em {idade - 18} anos para alistamento!')
+    elif idade < 18:
+        print(f'Ainda falta {18 - idade} anos para se alistar.')
+    elif idade == 18:
+        print(f'Você chegou momento correto para se alistar!')
+    return idade, ano_atual
+
+print(' '*3 + 'Alistamento Militar')
+print('='*30)
+
+while True:
+    try:
+        nascimento = int(input('Ano que nasceu: '))
+        break
+    except ValueError:
+        print('Erros 404\nTente Novamente!')        
+        
+alistamento = alistamento(nascimento)
