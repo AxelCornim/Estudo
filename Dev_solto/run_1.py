@@ -667,8 +667,8 @@ while True:
         
 valores = valores(dados)"""
 
-from datetime import datetime
-
+"""from datetime import datetime    
+                                                   
 def alistamento(nascimento):
     ano_atual = datetime.now().year
     idade = ano_atual - nascimento
@@ -690,4 +690,28 @@ while True:
     except ValueError:
         print('Erros 404\nTente Novamente!')        
         
-alistamento = alistamento(nascimento)
+alistamento = alistamento(nascimento)"""
+
+"""def media_notas(nota1, nota2):
+    media = (nota1 + nota2) / 2
+    if media >= 5 or media <= 6.9:
+        print(f'Você ficou em recuperação: Sua nota {media:.2f}')
+    elif media < 5:
+        print(f'Você foi REPROVADO!! Sua nota {media:.1f}')
+    elif media >= 7:
+        print(f'Você foi APROVADO!!! Sua nota {media:.1f}')
+    return media
+
+print(' '*3 + 'Boletin Escolar')
+print('='*30)
+
+while True:
+    try:
+        nota1 = float(input('Digite sua primeira nota: '))
+        nota2 = float(input('Digite sua segunda nota: '))
+        break
+    except ValueError:
+        print('Erro tente novamente!!!')
+        
+media_notas = media_notas(nota1, nota2)""" 
+
