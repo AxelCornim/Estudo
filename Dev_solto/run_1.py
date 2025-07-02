@@ -715,3 +715,31 @@ while True:
         
 media_notas = media_notas(nota1, nota2)""" 
 
+from datetime import datetime
+
+def avaliador(nascimento):
+    ano_atual = datetime.now().year
+    idade = ano_atual - nascimento
+    if idade <= 9:
+        print('Você está categoria Mirim!') 
+    elif 10 <= idade <= 14:  
+        print('Você está categoria Infantil!')
+    elif 15 <= idade <= 19:
+        print('Você está na categoria Júnior!')
+    elif 20 <= idade <= 25: 
+        print('Você está na categoria Sênior!')
+    elif idade > 25:
+        print('Você está na categoria Mestre!')
+    return ano_atual, idade
+
+print(' '*3 + 'A Confederação Nacional de Natação')
+print('='*30)
+
+while True:
+    try:
+        nascimento = int(input('Digite data do seu nascimento: '))
+        break
+    except ValueError:
+        print('Error!! Tente Novamente: ')
+        
+avaliador = avaliador(nascimento)
