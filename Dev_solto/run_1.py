@@ -715,7 +715,7 @@ while True:
         
 media_notas = media_notas(nota1, nota2)""" 
 
-from datetime import datetime
+"""from datetime import datetime
 
 def avaliador(nascimento):
     ano_atual = datetime.now().year
@@ -742,4 +742,28 @@ while True:
     except ValueError:
         print('Error!! Tente Novamente: ')
         
-avaliador = avaliador(nascimento)
+avaliador = avaliador(nascimento)"""
+
+def formas_triangulo(primeiro, segundo, terceiro):
+    soma_lados = primeiro + segundo
+    if primeiro == segundo == terceiro:
+        print('Com dados fornecidos formase um equilátero.')
+    elif primeiro == segundo or primeiro == terceiro or segundo == terceiro:
+        print('Com dados fornecidos formase um isósceles.')
+    else:
+        print('Com dados fornecidos formase um escaleno.')
+    return soma_lados
+
+print(' '*3 + 'AngleJudge')
+print('='*30)
+
+while True:
+    try:
+        primeiro = int(input('Primeiro lado: '))
+        segundo = int(input('Segundo lado: '))
+        terceiro = int(input('Terceiro lado: '))
+        break
+    except ValueError:
+        print('Errado!!! Tente Novamente: ')
+        
+formas_triangulo = formas_triangulo(primeiro, segundo, terceiro)

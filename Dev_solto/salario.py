@@ -14,9 +14,6 @@ def calcular_salario():
     # Cálculo do salário proporcional
     salario_proporcional = salario_base * ((horas_trabalhadas + horas_afastamento) / horas_mensais)
 
-    # Cálculo da quebra de caixa (25%)
-    quebra_de_caixa = salario_proporcional * 0.25
-
     # Cálculo das horas extras
     valor_hora = salario_base / horas_mensais
     valor_hora_extra_50 = valor_hora * 1.5
@@ -27,7 +24,7 @@ def calcular_salario():
     dsr_horas_extras = total_horas_extras / 6
 
     # Cálculo do salário bruto
-    salario_bruto = salario_proporcional + quebra_de_caixa + total_horas_extras + dsr_horas_extras + bonus_extra
+    salario_bruto = salario_proporcional + total_horas_extras + dsr_horas_extras + bonus_extra
 
     # Cálculo do INSS
     if salario_bruto <= 1412.00:
@@ -60,7 +57,6 @@ def calcular_salario():
     # Exibe os resultados
     print("\n========= RESUMO DO SALÁRIO =========")
     print(f"Salário Base Proporcional: R$ {salario_proporcional:.2f}")
-    print(f"Quebra de Caixa (25%): R$ {quebra_de_caixa:.2f}")
     print(f"Horas Extras 50%: R$ {horas_extras_50 * valor_hora_extra_50:.2f}")
     print(f"Horas Extras 100%: R$ {horas_extras_100 * valor_hora_extra_100:.2f}")
     print(f"DSR sobre Horas Extras: R$ {dsr_horas_extras:.2f}")
