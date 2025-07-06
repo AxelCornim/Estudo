@@ -744,15 +744,14 @@ while True:
         
 avaliador = avaliador(nascimento)"""
 
-def formas_triangulo(primeiro, segundo, terceiro):
-    soma_lados = primeiro + segundo
+"""def formas_triangulo(primeiro, segundo, terceiro):
     if primeiro == segundo == terceiro:
         print('Com dados fornecidos formase um equilátero.')
     elif primeiro == segundo or primeiro == terceiro or segundo == terceiro:
         print('Com dados fornecidos formase um isósceles.')
     else:
         print('Com dados fornecidos formase um escaleno.')
-    return soma_lados
+    return 
 
 print(' '*3 + 'AngleJudge')
 print('='*30)
@@ -766,4 +765,39 @@ while True:
     except ValueError:
         print('Errado!!! Tente Novamente: ')
         
-formas_triangulo = formas_triangulo(primeiro, segundo, terceiro)
+formas_triangulo = formas_triangulo(primeiro, segundo, terceiro)"""
+
+def imc(peso, altura):
+    altura_real = altura ** 2
+    imc = peso / altura_real
+    if imc <= 18.5:
+        print(f'[{imc:.1f}]Você está abaixo do peso.')
+    elif 18.5 <= imc <= 25:
+        print(f'[{imc:.1f}]Seu peso está ideal.')
+    elif 25 <= imc <= 30:
+        print(f'[{imc:.1f}]Você com sobrepeso.')
+    elif 30 <= imc <= 40:
+        print(f'[{imc:.1f}]Você está obeso.')
+    elif imc >= 40:
+        print(f'[{imc:.1f}]Você está com obesidade mórbidda.')
+    return imc, altura_real
+
+print(' '*4 + 'Calculadora do IMC')
+print('-~-'*10)
+
+while True:
+    try:
+        peso = float(input('Digite seu peso: '))
+        altura = float(input('Digite sua altura: '))
+        # Verifica se são valores positivos
+        if peso <= 0 or altura <= 0:
+            raise ValueError('Peso e altura devem ser maiores que zero.')
+        break
+    except ValueError as e:
+        # Aqui pegamos tanto erros de conversão quanto nosso ValueError customizado
+        print(f'Entrada inválida: {e}\nPor favor, tente novamente.')
+    except Exception as e:
+        # Qualquer outro erro inesperado
+        print(f'Erro inesperado: {e}\nTente novamente.')
+        
+imc = imc(peso, altura)
