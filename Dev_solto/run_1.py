@@ -767,7 +767,7 @@ while True:
         
 formas_triangulo = formas_triangulo(primeiro, segundo, terceiro)"""
 
-def imc(peso, altura):
+"""def imc(peso, altura):
     altura_real = altura ** 2
     imc = peso / altura_real
     if imc <= 18.5:
@@ -800,4 +800,47 @@ while True:
         # Qualquer outro erro inesperado
         print(f'Erro inesperado: {e}\nTente novamente.')
         
-imc = imc(peso, altura)
+imc = imc(peso, altura)"""
+
+def pagamento(valor):
+    avista = valor * 0.90
+    cartao_avista = valor * 0.95
+    cartao_duasX = valor
+    cartao_tresX = valor * 1.20
+    return avista, cartao_avista, cartao_duasX, cartao_tresX
+
+print(' '*3 + 'Loja de Roupas Ligeiro')
+print('-=-'*10)
+
+while True:
+    try:
+        valor = float(input('Digite valor produto: '))
+        break
+    except ValueError:
+        print('ERROR CÓDIGO 404\nTente novamente! ')
+
+avista, cartao_avista, cartao_duasX, cartao_tresX = pagamento(valor)
+
+while True:
+    try:
+        usuario = int(input('[1] à vista dinheiro/cheque'
+                            '\n[2] à vista cartão'
+                            '\n[3] 2x no cartão'
+                            '\n[4] 3x ou mais no cartão'
+                            '\n[5] Para sair'
+                            '\n Qual opção senhor escolhe?'
+                            '\n---> '
+                            ))
+        if usuario == 1:
+            print(f'A vista o valor sua compra fica R${avista:.2f}Reais.')
+        elif usuario == 2:
+            print(f'O valor a vista no cartão fica R${cartao_avista:.2f}Reais.')
+        elif usuario == 3:
+            print(f'Duas vezes no cartão valor da compra fica R${cartao_duasX:.2f}Reais.')
+        elif usuario == 4:
+            print(f'Três vezes no cartão ficou com juros de %5 R${cartao_tresX:.2f}Reais.')
+        elif usuario == 5:
+            print('Programa Finalizado!')
+            break
+    except ValueError: 
+        print('Digite somente valores dentro tabela! ')
