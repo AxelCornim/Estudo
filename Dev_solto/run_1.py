@@ -802,7 +802,7 @@ while True:
         
 imc = imc(peso, altura)"""
 
-def pagamento(valor):
+"""def pagamento(valor):
     avista = valor * 0.90
     cartao_avista = valor * 0.95
     cartao_duasX = valor
@@ -843,4 +843,40 @@ while True:
             print('Programa Finalizado!')
             break
     except ValueError: 
-        print('Digite somente valores dentro tabela! ')
+        print('Digite somente valores dentro tabela! ')"""
+        
+"""from random import choice
+        
+maquina = [1, 2, 3]
+        
+def jokenpo(jogador, maquina):
+    maquina = choice(maquina)
+    if jogador == maquina:
+        return 'Empate!'
+    elif (jogador == 1 and maquina == 3) or \
+         (jogador == 2 and maquina == 1) or \
+         (jogador == 3 and maquina == 2):
+        return 'Você venceu!'
+    else:
+        return 'Máquina venceu!'
+    
+opcoes = {1: 'pedra', 2: 'papel',3: 'tesoura'}
+
+try:
+    jogador = int(input('Escolha: 1 (Pedra), 2 (Papel), 3 (Tesoura): '))
+    if jogador not in opcoes:
+        print('Escolha inválida')
+    else:
+        print(f' Você escolheu {opcoes}{jogador}')
+        print(f'Máquina escolheu {opcoes}{maquina}')
+        print(jokenpo(jogador, maquina))
+except  ValueError:
+    print('Digite somente números inteiros!!! ')"""
+    
+from time import sleep
+
+for i in range(10, 0, -1):
+    print(i)
+    time.sleep(1)
+    
+print('Vish estorou tudo!')
