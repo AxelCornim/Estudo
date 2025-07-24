@@ -873,10 +873,11 @@ try:
 except  ValueError:
     print('Digite somente números inteiros!!! ')"""
     
-from time import sleep
+"""from time import sleep
 
 for i in range(10, 0, -1):
     print(i)
     time.sleep(1)
     
-print('Vish estorou tudo!')
+print('Vish estorou tudo!')"""
+
