@@ -879,5 +879,9 @@ for i in range(10, 0, -1):
     print(i)
     time.sleep(1)
     
-print('Vish estorou tudo!')"""
+print('Vish estorou tudo!')"""  
 
+"""for i in range(0, 51):
+    if i % 2 == 0:
+        print(i, end=' ')"""
+        
