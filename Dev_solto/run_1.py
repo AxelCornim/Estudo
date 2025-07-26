@@ -884,4 +884,13 @@ print('Vish estorou tudo!')"""
 """for i in range(0, 51):
     if i % 2 == 0:
         print(i, end=' ')"""
+
+multiplo_tres = 0
+qtd = 0
         
+for i in range(1, 501):
+    if i % 3 == 0 and i % 2 == 1:
+        qtd += 1
+        multiplo_tres += i
+  
+print(f'Todos númeors multiplicaveis por três são {qtd} e deu total {multiplo_tres}')
