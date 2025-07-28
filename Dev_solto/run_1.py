@@ -885,7 +885,7 @@ print('Vish estorou tudo!')"""
     if i % 2 == 0:
         print(i, end=' ')"""
 
-multiplo_tres = 0
+"""multiplo_tres = 0
 qtd = 0
         
 for i in range(1, 501):
@@ -893,4 +893,17 @@ for i in range(1, 501):
         qtd += 1
         multiplo_tres += i
   
-print(f'Todos númeors multiplicaveis por três são {qtd} e deu total {multiplo_tres}')
+print(f'Todos númeors multiplicaveis por três são {qtd} e deu total {multiplo_tres}')"""
+
+print(' '*15 + 'Tabuada')
+print('-~'*20)
+
+while True:
+    try:
+        entrada = int(input('Digite número deseja ver tabuada: '))
+        for i in range(1, 11, 1):
+            print(f'{entrada} x {i} = {entrada*i}')
+        break
+    except ValueError:
+        print('Entrada inválida!\n Tente novamente: ')
+        
