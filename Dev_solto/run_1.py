@@ -895,7 +895,7 @@ for i in range(1, 501):
   
 print(f'Todos númeors multiplicaveis por três são {qtd} e deu total {multiplo_tres}')"""
 
-print(' '*15 + 'Tabuada')
+"""print(' '*15 + 'Tabuada')
 print('-~'*20)
 
 while True:
@@ -905,5 +905,5 @@ while True:
             print(f'{entrada} x {i} = {entrada*i}')
         break
     except ValueError:
-        print('Entrada inválida!\n Tente novamente: ')
+        print('Entrada inválida!\n Tente novamente: ')"""
         
