@@ -6,7 +6,7 @@ import re
 import sys
 
 # ======================= CONFIGURAÇÕES =======================
-SAVE_PATH = r"C:\Users\Windows 11\Music\Musicas"  # Pasta para salvar os arquivos
+SAVE_PATH = r"C:\Users\Windows 11\Músicas"  # Pasta para salvar os arquivos
 # =============================================================
 
 def clean_youtube_url(url):
