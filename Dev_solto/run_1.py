@@ -907,7 +907,7 @@ while True:
     except ValueError:
         print('Entrada inválida!\n Tente novamente: ')"""
           
-from os import system
+"""from os import system
                 
 print(' '* 3 + 'Soma de Pares (ímpares serão ignorados)')
 print('-+-'*15 + '\nDigite [0] para sair do loop')
@@ -925,4 +925,4 @@ while True:
         print('Entrada inválida!\nTente novamente: ')
         
 system('cls')
-print(f'Soma de todos pares foi {soma_pares}')
+print(f'Soma de todos pares foi {soma_pares}')"""
