@@ -906,4 +906,23 @@ while True:
         break
     except ValueError:
         print('Entrada inválida!\n Tente novamente: ')"""
+          
+from os import system
+                
+print(' '* 3 + 'Soma de Pares (ímpares serão ignorados)')
+print('-+-'*15 + '\nDigite [0] para sair do loop')
+
+soma_pares = 0
+
+while True:
+    try:
+        entrada = int(input('Digite aqui: '))
+        if entrada % 2 == 0:
+            soma_pares = entrada + soma_pares
+        if entrada == 0:
+            break
+    except ValueError:
+        print('Entrada inválida!\nTente novamente: ')
         
+system('cls')
+print(f'Soma de todos pares foi {soma_pares}')
