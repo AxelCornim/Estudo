@@ -926,3 +926,25 @@ while True:
         
 system('cls')
 print(f'Soma de todos pares foi {soma_pares}')"""
+        
+"""print('='*30 + '\n10 Termos de uma PA'+ '\n' + '='*30)
+        
+while True:
+    try:
+        primeiro_termo = int(input('Primeiro termo: '))
+        razao = int(input('Razão: '))
+        break
+    except ValueError:
+        print('Entrada inválida!\nTente Novamente: ')
+        
+def pa(primeiro_termo, razao):
+    print(primeiro_termo, end=' -> ')
+    termo = primeiro_termo
+    for i in range(0, 9):
+        termo += razao
+        print(termo, end=' -> ')
+    print(end='Acabou !')
+    return termo
+    
+pa(primeiro_termo, razao)"""
+
