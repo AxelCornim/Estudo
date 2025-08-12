@@ -944,7 +944,20 @@ def pa(primeiro_termo, razao):
         termo += razao
         print(termo, end=' -> ')
     print(end='Acabou !')
-    return termo
+    return termo    
     
 pa(primeiro_termo, razao)"""
+
+"""print('-~'*30)
+print(' '*15 + 'Verificador de números primos')
+print('-~'*30)
+
+while True:
+    try:
+        n = int(input('Digite número aqui: '))
+        break
+    except ValueError:
+        print('Erro 403!\nTente novamente: ')
+        
+print(f'{n} é primo.' if n > 1 and all(n % i for i in range(2, int(n**0.5) + 1)) else f'{n} não é primo!')"""
 
