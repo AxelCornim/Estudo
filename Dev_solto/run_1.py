@@ -961,3 +961,25 @@ while True:
         
 print(f'{n} é primo.' if n > 1 and all(n % i for i in range(2, int(n**0.5) + 1)) else f'{n} não é primo!')"""
 
+"""import unicodedata
+
+print('='*30)
+print(' '*3 + 'Verificador de palindromo')
+print('='*30)
+
+while True:
+    frase = input('Digite Aqui: ').strip()
+    if frase:
+        break
+    else:
+        print('Valor incorreto!\nDigite novamente: ')
+ 
+frase = unicodedata.normalize('NFD', frase)
+frase = ''.join(ch for ch in frase if unicodedata.category(ch) != 'Mn')
+frase = ''.join(ch for ch in frase.upper() if ch.isalnum())
+
+if frase == frase[::-1]:
+    print('Frase é um palindromo.')
+else:
+    print('Frase não é um palindromo.')"""
+
