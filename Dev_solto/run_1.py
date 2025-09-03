@@ -983,3 +983,55 @@ if frase == frase[::-1]:
 else:
     print('Frase não é um palindromo.')"""
 
+"""from datetime import date
+from os import system
+
+ano_atual = date.today().year
+maiores = []
+menores = []
+
+print('~'*30)
+print('\n' + ' '*5 + 'Classificador idade')
+print('~'*30)
+
+for i in range(1, 8):
+    while True:
+        nome = input(f'[{i}] Nome: ')
+        if nome.replace(" ", "").isalpha():
+            break
+                
+    while True:
+        try:
+            nascimento = int(input(f'[{i}] Ano de nascimento de {nome}: '))
+            system('cls')
+            break
+        except ValueError:
+            print('Entrada inválido!\nTente Novamente: ')
+  
+    idade = ano_atual - nascimento
+    
+    if idade >= 18:
+        maiores.append((nome, idade))
+    else:
+        menores.append((nome, idade))
+        
+system('cls')
+        
+print('=== Resultados ===')
+
+print('\nMaiores de idade:')
+for nome, idade in maiores:
+    print(f'- {nome}  ({idade} anos)')
+    
+print('\nMenores de idade:')
+for nome, idade in menores:
+    print(f'- {nome}  ({idade} anos)')
+    
+    
+print('\n///Resumo///')
+if maiores:
+    print(f'Total maiores idade: {len(maiores)}')
+if menores:
+    print(f'Total menores idade: {len(menores)}')"""
+    
+    
