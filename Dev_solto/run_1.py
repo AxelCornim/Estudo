@@ -1034,4 +1034,37 @@ if maiores:
 if menores:
     print(f'Total menores idade: {len(menores)}')"""
     
-    
+from os import system
+
+pessoas = []
+
+print('~'*30)
+print('\n' + ' '*5 + 'Organizador por Peso')
+print('~'*30)
+
+for i in range(1, 8):
+    while True:
+        nome = input(f'[{i}] Nome: ')
+        if nome.replace(" ", "").isalpha():
+            break
+                
+    while True:
+        try:
+            peso = int(input(f'[{i}] Qual seu peso {nome}: '))
+            system('cls')
+            break
+        except ValueError:
+            print('Entrada inválido!\nTente Novamente: ')
+
+    pessoas.append((nome, peso))
+        
+pessoas.sort(key=lambda x: x[1], reverse=True)
+system('cls')
+i = 1       
+
+        
+print('=== Resultados ===')
+print('\n///Lista ordem Descresente///')
+for nome, peso in pessoas:
+    print(f'{i}- {nome} KG {peso}.')
+    i += 1
