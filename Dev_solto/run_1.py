@@ -1034,7 +1034,7 @@ if maiores:
 if menores:
     print(f'Total menores idade: {len(menores)}')"""
     
-from os import system
+"""from os import system
 
 pessoas = []
 
@@ -1042,7 +1042,7 @@ print('~'*30)
 print('\n' + ' '*5 + 'Organizador por Peso')
 print('~'*30)
 
-for i in range(1, 8):
+for i in range(1, 5):
     while True:
         nome = input(f'[{i}] Nome: ')
         if nome.replace(" ", "").isalpha():
@@ -1067,4 +1067,5 @@ print('=== Resultados ===')
 print('\n///Lista ordem Descresente///')
 for nome, peso in pessoas:
     print(f'{i}- {nome} KG {peso}.')
-    i += 1
+    i += 1"""
+    
