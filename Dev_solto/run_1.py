@@ -1069,3 +1069,65 @@ for nome, peso in pessoas:
     print(f'{i}- {nome} KG {peso}.')
     i += 1"""
     
+"""from os import system
+
+AZUL = "\033[94m"
+ROSA = "\033[95m"
+RESET = "\033[0m"
+
+pessoas = []
+homen_velho = []
+menos_vinte = 0
+
+print('-'*30)
+print('\n' + ' '*5 + 'Analize de grupo')
+print('-'*30)
+
+for i in range(1, 4):
+    while True:
+        nome = input(f'[{i}] Nome: ')
+        if nome.replace(" ", "").isalpha():
+            break
+       print('Entrada inválido!\nTente Novamente: ')
+    
+    while True:
+        try:
+            idade = int(input(f'[{i}] Idade: '))
+            break
+        except ValueError:
+            print('Entrada inválido!\nTente Novamente: ')
+            
+    while True:
+        sexo = str(input(f'[{i}] Qual seu sexo [H/M]: ')).upper()
+        if sexo in ("H", "M"):
+            break
+        print('Entrada inválido!\nTente Novamente: ')
+        
+    if sexo == "M" and idade <= 20:
+        menos_vinte += 1
+    
+    if sexo == "H":
+        homen_velho.append((nome, idade, sexo))
+        
+    homen_mais_velho = max(homen_velho, key=lambda x: x[1]) if homen_velho else None
+    
+    pessoas.append((nome, idade, sexo))
+    
+pessoas.sort(key=lambda x: x[1], reverse=True)
+
+system('cls')
+i = 1 
+
+print('=== Resultados ===\n')
+print(f'{"#":<3} {"Nome":<15} {"Idade":<6} {"Sexo":<4}')
+print('-'*30)
+
+for nome, idade, sexo in pessoas:
+    cor = AZUL if sexo == "H" else ROSA
+    print(f'{i:<3} {cor}{nome:<15}{idade:<6}{sexo:<4}{RESET}')
+    i += 1
+    
+if homen_mais_velho:
+    print(f'\nHomem mais velho: {AZUL}{homen_mais_velho[0]} ({homen_mais_velho[1]} anos){RESET}')
+print(f'Mulheres com até 20 anos: {ROSA}{menos_vinte}{RESET}')"""
+
