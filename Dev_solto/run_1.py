@@ -1131,3 +1131,27 @@ if homen_mais_velho:
     print(f'\nHomem mais velho: {AZUL}{homen_mais_velho[0]} ({homen_mais_velho[1]} anos){RESET}')
 print(f'Mulheres com até 20 anos: {ROSA}{menos_vinte}{RESET}')"""
 
+"""print('~'*30)
+print(' '*5 + 'Validação interpessoal')
+print('~'*30)
+
+while True:
+    #Entrada input das duas var
+    nome = str(input('Nome: '))
+    sexo = str(input("Sexo [M/F]: ")).strip().upper()
+    
+    #Verifica se nome esta vazio
+    if not nome.replace(" ", "").isalpha():
+        print("Error!\n Digite somente nome: ")
+        continue
+    
+    #Verifica se contem M ou F na var
+    if sexo not in ("M", "F"):
+        print("Error!\n Digite somente [M/F]: ")
+        continue
+    
+    #Finaliza loop caso dois verificadores estejam corretos
+    break
+        
+print(f'{nome} sendo do sexo {sexo}\n Passou no teste!')"""
+
