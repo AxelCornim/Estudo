@@ -1155,3 +1155,29 @@ while True:
         
 print(f'{nome} sendo do sexo {sexo}\n Passou no teste!')"""
 
+"""import random
+from os import system
+
+ia = random.randint(0, 10)
+vezes = 0
+
+print('-'*30)
+print(' '*5 + 'Adivinhe número de [0/10]')
+print('-'*30)
+
+while True:
+    try:
+        user = int(input('Digite aqui: '))
+        vezes += 1
+        
+        if user == ia:
+            system('cls')
+            print(f'Parabéns você acertou! O número era {user}.\nCom apenas {vezes}x tentativa(s).')
+        elif user < ia:
+            print('Tente número maior!')
+        else:
+            print('Tente número menor!')
+        
+    except ValueError:
+        print('Error!\nDigite somente números: ')"""
+        
