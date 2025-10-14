@@ -1180,4 +1180,48 @@ while True:
         
     except ValueError:
         print('Error!\nDigite somente números: ')"""
+
+from os import system
         
+while True:
+    try:
+        first = int(input('Digite primeiro número: '))
+        second = int(input('Digite segundo número: '))
+        
+        while True:
+            escolha = int(input('Digite [1] para somar números '
+                                '\nDigite [2] para multiplicar números '
+                                '\nDigite [3] para ver qual número é maior '
+                                '\nDigite [4] para novos números '
+                                '\nDigite [5] para finalizar sistema'
+                                '\n---> '))
+            
+            if first < 0 or second < 0:
+                print('Número negativo! Tente novamente: ')
+                break
+                            
+            if escolha == 1:
+                print(f'Soma de {first} + {second} = {first + second}')
+                
+            if escolha == 2:
+                print(f'Multiplicação de {first} x {second} = {first * second}')
+                
+            if escolha == 3:
+                if first == second:
+                    print(f'Números {first} e {second} são iguais!')
+                elif first > second:
+                    print(f'Número {first} é maior que {second}')
+                else:
+                    print(f'Número {second} é maior que {first}')
+                    
+            if escolha == 4:
+                print('~~~ Reiniciando Sistema... ~~~')
+                system('cls')
+                break
+            
+            if escolha == 5:
+                print('Finalizando sistema...')
+                exit()
+        
+    except ValueError:
+        print('Entrada inválida!\nTente novamente: ')
