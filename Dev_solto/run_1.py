@@ -1181,7 +1181,7 @@ while True:
     except ValueError:
         print('Error!\nDigite somente números: ')"""
 
-from os import system
+'''from os import system
         
 while True:
     try:
@@ -1224,4 +1224,18 @@ while True:
                 exit()
         
     except ValueError:
-        print('Entrada inválida!\nTente novamente: ')
+        print('Entrada inválida!\nTente novamente: ')'''
+        
+"""print('-~'*30)
+print(' '*15 + 'Calculo fatorial')
+print('-~'*30)
+
+user = int(input('Digite número para ver fatorial: '))
+fatorial = 1
+print(f'Calculando {user}! = ', end='')
+for user in range(user, 0, -1):
+    print(f'{user}', end=' x ')
+    fatorial = fatorial * user
+    
+print(f'= {fatorial}')"""
+
