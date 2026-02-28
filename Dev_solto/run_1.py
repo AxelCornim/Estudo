@@ -1287,3 +1287,42 @@ while mais != 0:
     
 print(f'Progressão finalizada com {total} termos mostrados.')"""
 
+""""
+print('-~'*15)
+print(' '*5+ 'Sequência Fibonacci')
+print('-~'*15)
+
+mais = 1
+
+while mais != 0:
+    termos = int(input('Quantos termos deseja ver: '))
+    primeiro = int(input('Primeiro termo: '))
+    
+    print(f'{primeiro}', end=' ')
+    
+    segundo = primeiro + 1
+    mutavel = 1
+    
+    while mutavel < termos:
+        terceiro = primeiro + segundo
+        print(f'-> {terceiro}', end=' ')
+        primeiro = segundo
+        segundo = terceiro
+        mutavel += 1
+        
+    print('-> FIM!')
+        
+    mais = int(input('\nQuantos termos deseja ver a mais (Digite [0] para sair)? '))"""
+    
+repetidor = 0
+volume = 0
+total = 0
+
+while True:
+    repetidor = int(input('Digite um número: [999 para sair] '))
+    if repetidor == 999:
+        print(f'Você digitou {volume} números e a soma deles foi {total}!')
+        break
+    if repetidor != 0:
+        volume += 1
+        total += repetidor
