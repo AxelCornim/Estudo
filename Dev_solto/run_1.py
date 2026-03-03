@@ -1314,7 +1314,7 @@ while mais != 0:
         
     mais = int(input('\nQuantos termos deseja ver a mais (Digite [0] para sair)? '))"""
     
-repetidor = 0
+"""repetidor = 0
 volume = 0
 total = 0
 
@@ -1323,6 +1323,23 @@ while True:
     if repetidor == 999:
         print(f'Você digitou {volume} números e a soma deles foi {total}!')
         break
-    if repetidor != 0:
+    elif repetidor != 0:
         volume += 1
-        total += repetidor
+        total += repetidor""" 
+        
+continuar = ["S", "N"]
+total = 0
+soma = 0
+number = []
+
+while True:
+    n1 = int(input('Digite um número: '))
+    number.append(n1)
+    total += 1
+    soma += n1
+    continuar = str(input('Deseja continuar? [S/N] ')).upper()
+    if continuar == "N":
+        print(f'Você digitou {total} números e a média deles foi {soma/total}!')
+        print(f"O maior número digitado foi {max(number)} e o menor foi {min(number)}")
+        break
+    
