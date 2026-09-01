@@ -1327,7 +1327,7 @@ while True:
         volume += 1
         total += repetidor""" 
         
-continuar = ["S", "N"]
+"""continuar = ["S", "N"]
 total = 0
 soma = 0
 number = []
@@ -1341,5 +1341,5 @@ while True:
     if continuar == "N":
         print(f'Você digitou {total} números e a média deles foi {soma/total}!')
         print(f"O maior número digitado foi {max(number)} e o menor foi {min(number)}")
-        break
+        break"""
     
