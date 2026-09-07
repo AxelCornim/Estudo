@@ -1343,3 +1343,40 @@ while True:
         print(f"O maior número digitado foi {max(number)} e o menor foi {min(number)}")
         break"""
     
+print('~'*30)
+primeiro = int(input('Digite primeiro número: '))
+segundo = int(input('Digite segundo número: '))
+
+while True:
+
+    try:
+        print('   [ 1 ] Somar\n   [ 2 ] Multiplicar\n   [ 3 ] Maior\n   [ 4 ] Novos números\n   [ 5 ] Sair do programa')
+        resposta = int(input('Digite aqui: '))
+        if resposta == 1:
+            print(f'Soma de {primeiro} + {segundo} = {primeiro + segundo}')
+        elif resposta == 2:
+            print(f'Multiplicação de {primeiro} x {segundo} = {primeiro * segundo}')
+        elif resposta == 3:
+            if primeiro > segundo:
+                print(f'Maior número é {primeiro}')
+            elif segundo > primeiro:
+                print(f'Maior número é {segundo}')
+            else:
+                print('Números são iguais!')
+        elif resposta == 4:
+            print('Reiniciando sistema...')
+            primeiro = int(input('Digite primeiro número: '))
+            segundo = int(input('Digite segundo número: '))
+            system('cls')
+            continue
+        elif resposta == 5: 
+            system('cls')
+            print('Finalizando sistema...')
+            break
+        else:
+            print('Opção inválida! Tente novamente.')
+        
+            
+    except ValueError:
+        print('Digite apenas números inteiros!')
+    print('\nPresione Enter para continuar...')
