@@ -1434,3 +1434,22 @@ while True:
 system('cls')
 print(f'Acertou em {trys}x tentativas!')"""
 
+"""while True:
+    try:
+        fact = int(input('Digite um número\nCalcule seu fatorial: '))
+        if fact < 0:
+            print('Digite somente números positivos!!!')
+        else:
+            
+            fatorial = 1
+            conta = []
+            for i in range(fact, 0, -1):
+                fatorial *= i
+                conta.append(str(i))
+                
+            memoria = ' x '.join(conta)
+            print(f'O fatorial de {fact}! = {memoria} = {fatorial}')
+            break
+    except ValueError:
+        print('Digite somente números!!!')"""
+        
