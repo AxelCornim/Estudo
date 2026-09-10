@@ -1402,7 +1402,7 @@ print(f'A média de idade do grupo é {sum([p["Idade"] for p in people.values()]
 print(f"O homem mais velho do grupo é {old_man['Idade']} anos se chama {old_man['Nome']}.")
 print(f'No grupo temos {len([p for p in people.values() if p["Idade"] < 20 and p['Sexo'] == 'F'])} mulher(es) com menos que 20 anos.')"""
 
-print('~'*30)
+"""print('~'*30)
 print(' '*5 + 'Validação interpessoal')
 
 while True:
@@ -1413,4 +1413,24 @@ while True:
         print('Digite somente M ou F !!!')
     
 system('cls')
-print(f'Você digitou {sex} e passou no teste!')
+print(f'Você digitou {sex} e passou no teste!')"""
+
+"""maquina = random.randint(0, 10)
+trys = 0
+
+while True:
+    try:
+        user = int(input('Digite um número de 0/10: '))
+        trys += 1
+        if user == maquina:
+            break
+        elif user > maquina:
+            print('Tente número menor!')
+        elif user < maquina:
+            print('Tente número maior!')
+    except ValueError:
+        print('Digite somente números!!!')
+        
+system('cls')
+print(f'Acertou em {trys}x tentativas!')"""
+
