@@ -1342,7 +1342,8 @@ while True:
         print(f'Você digitou {total} números e a média deles foi {soma/total}!')
         print(f"O maior número digitado foi {max(number)} e o menor foi {min(number)}")
         break"""
-    
+
+"""
 print('~'*30)
 primeiro = int(input('Digite primeiro número: '))
 segundo = int(input('Digite segundo número: '))
@@ -1379,4 +1380,25 @@ while True:
             
     except ValueError:
         print('Digite apenas números inteiros!')
-    print('\nPresione Enter para continuar...')
+    print('\nPresione Enter para continuar...')"""
+    
+"""people = dict()
+
+for x in range(0, 4):
+       
+    print(f"----- {x+1}ª pessoa -----")
+    name = str(input("Nome: ")).strip()
+    age = int(input("Idade: "))
+    sex = str(input("Sexo [M/F]: ")).strip().upper()
+
+    people[x] = {"Nome": name, "Idade": age, "Sexo": sex}
+    
+old_man = max(
+    (people for people in people.values() if people['Sexo'] == 'M'),
+    key=lambda x: x['Idade'],
+)
+    
+print(f'A média de idade do grupo é {sum([p["Idade"] for p in people.values()]) / len(people):.1f} anos.')
+print(f"O homem mais velho do grupo é {old_man['Idade']} anos se chama {old_man['Nome']}.")
+print(f'No grupo temos {len([p for p in people.values() if p["Idade"] < 20 and p['Sexo'] == 'F'])} mulher(es) com menos que 20 anos.')"""
+
