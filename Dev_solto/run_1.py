@@ -1453,3 +1453,18 @@ print(f'Acertou em {trys}x tentativas!')"""
     except ValueError:
         print('Digite somente números!!!')"""
         
+print('Gerador de PA')
+print('=*'*15)
+
+while True:
+    try:
+        first = int(input('Digite primeiro termo: '))
+        razao = int(input('Digite segundo termo: '))
+        break
+    except ValueError:
+        print('Digite somente números!!!')
+
+for i in range(10):
+    termo = first + i * razao
+    print(termo, end=' -> ')
+print('FIM!')
