@@ -1453,7 +1453,7 @@ print(f'Acertou em {trys}x tentativas!')"""
     except ValueError:
         print('Digite somente números!!!')"""
         
-print('Gerador de PA')
+"""print('Gerador de PA')
 print('=*'*15)
 
 while True:
@@ -1467,4 +1467,32 @@ while True:
 for i in range(10):
     termo = first + i * razao
     print(termo, end=' -> ')
-print('FIM!')
+print('FIM!')"""
+
+"""print('Gerador de PA')
+print('=*'*15)
+
+primeiro_termo = int(input('Primeiro termo: '))
+razao = int(input('Razão da PA: '))
+termo = 10
+
+while True:
+    try:
+        for i in range(termo):
+            termo = primeiro_termo + i * razao
+            print(termo, end=' -> ')
+        print('Pausa!')
+        
+        novo_termo = int(input('\nQuantos termos deseja mostrar? '))
+        termo = novo_termo
+        
+        if novo_termo == 0:
+            print('\n')
+            print('=*'*15)
+            print('Programa finalizado!\n')
+            break
+    except ValueError:
+        print('Digite somente números inteiros!!!')"""
+        
+
+        
