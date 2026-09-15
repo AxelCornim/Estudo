@@ -1494,5 +1494,22 @@ while True:
     except ValueError:
         print('Digite somente números inteiros!!!')"""
         
+"""print('*-*'*10)
+print(' '*5 + 'Sequência Fibonacci')
+print('*-*'*10)       
 
-        
+termo = int(input('Quantos termos deseja ver: '))
+print('~'*30)
+
+ante = 0
+atual = 1
+
+for i in range(termo):
+    print(ante, end=' -> ')
+    proximo = ante + atual
+    ante = atual
+    atual = proximo
+    
+print('FIM!')
+print('~'*30)"""
+
