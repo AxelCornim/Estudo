@@ -1513,3 +1513,21 @@ for i in range(termo):
 print('FIM!')
 print('~'*30)"""
 
+'''numero = []
+print('~'*30)
+
+while True:
+    try:
+        user = int(input('Digite um número: '))
+        
+        if user == 999:
+            print('~'*30)
+            print(f'Você digitou {len(numero)} números ea soma total é {sum(numero)}.')
+            print('~'*30)
+            break
+        
+        numero.append(user)
+        
+    except ValueError:
+        print('Digite somente números inteiros!!!')'''
+        
