@@ -1530,4 +1530,36 @@ while True:
         
     except ValueError:
         print('Digite somente números inteiros!!!')'''
+
+"""numero = []
+tot = 0
+        
+while True:
+    try:
+        user = int(input('Digite um número: '))
+        numero.append(user)
+        saida =  str(input('Deseja continuar? [S/N] ')).strip().upper()
+        tot += 1
+        if saida == 'N':
+            print('~'*30)
+            print(f'Você digitou {tot} números ea média é {sum(numero) / len(numero)}.')
+            print(f'O maior valor foi {max(numero)} eo menor foi {min(numero)}')
+            print('~'*30)
+            break
+    except ValueError:
+        print('Digite somente números!!!')"""
+        
+"""number = []
+tot = 0
+        
+while True:
+    try:
+        user = int(input('(777 para sair)\nDigite um valor: '))
+        tot += 1
+        number.append(user)
+        if user == 777:
+            print(f'A soma dos {tot} resultou em {sum(number)}.')
+            break
+    except ValueError:
+        print('Digite somente números inteiros!')"""
         
