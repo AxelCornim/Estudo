@@ -1563,3 +1563,16 @@ while True:
     except ValueError:
         print('Digite somente números inteiros!')"""
         
+
+while True:
+    try:
+        print('~'*30)
+        user = int(input('Digite um número: '))
+        print('~'*30)
+        for i in range(10):
+            print(f'{i+1} x {user} = {(i+1) * user}')
+        if user < 0:
+            print('\nPrograma finalizado!\n')
+            break
+    except ValueError:
+        print('Digite somente números inteiros, e somente númeoros!!!')
