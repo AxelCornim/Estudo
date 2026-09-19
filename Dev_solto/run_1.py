@@ -1563,7 +1563,6 @@ while True:
     except ValueError:
         print('Digite somente números inteiros!')"""
         
-
 while True:
     try:
         print('~'*30)
