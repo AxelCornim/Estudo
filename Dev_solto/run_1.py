@@ -1621,7 +1621,7 @@ print(f"Total pessoas acima 18 anos foram {len([i for i in turma if i['idade'] >
 print(f"Temos total {len([i for i in turma if i['sexo'] == 'M'])} homen[s] cadastrado[s].")
 print(f"Ao todo temos {len([i for i in turma if i['sexo'] == 'F' and i['idade'] < 20])} mulher[s] com menos de 20 anos.")"""
 
-print('*'*30)
+"""print('*'*30)
 print(' '*5 + 'Loja do Quikaki')
 print('*'*30)
 
@@ -1645,4 +1645,25 @@ item_barato =min(lista_compras, key=lambda item: item['preco'])
         
 print(f"Total das compras: R${sum(item['preco'] for item in lista_compras):.2f}")
 print(f"No total foi contabilizado {len([item for item in lista_compras if item['preco'] > 1000])} produto(s) acima de mil reais.")
-print(f"O produto mais barato lista foi {item_barato['nome']} que custa R${item_barato['preco']:.2f}.")
+print(f"O produto mais barato lista foi {item_barato['nome']} que custa R${item_barato['preco']:.2f}.")"""
+
+print('#'*30)
+print(' '*5 + 'Banco do Koshita')
+print('#'*30)
+
+money = float(input('Qual valor deseja sacar: '))
+
+cinquenta = money // 50
+money %= 50
+
+dez =  money // 10
+money %= 10
+
+un = money // 1
+    
+if cinquenta:
+    print(f"Total de {cinquenta:.1f} cédulas de R$50")
+if dez:
+    print(f"Total de {dez:.1f} cédulas de R$10")
+if un:
+    print(f"Total de {un:.1f} cédulas de R$1")
