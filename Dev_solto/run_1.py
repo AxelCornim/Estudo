@@ -1596,7 +1596,7 @@ while True:
     except ValueError:
         print('Digite somente números inteiros!!!')"""
         
-print('~'*30)
+"""print('~'*30)
 print(' '*5 + 'Cadastro Pessoas')
 print('~'*30)
 
@@ -1619,4 +1619,30 @@ while True:
         
 print(f"Total pessoas acima 18 anos foram {len([i for i in turma if i['idade'] >= 18])} pesso[as].")
 print(f"Temos total {len([i for i in turma if i['sexo'] == 'M'])} homen[s] cadastrado[s].")
-print(f"Ao todo temos {len([i for i in turma if i['sexo'] == 'F' and i['idade'] < 20])} mulher[s] com menos de 20 anos.")
+print(f"Ao todo temos {len([i for i in turma if i['sexo'] == 'F' and i['idade'] < 20])} mulher[s] com menos de 20 anos.")"""
+
+print('*'*30)
+print(' '*5 + 'Loja do Quikaki')
+print('*'*30)
+
+lista_compras = []
+
+while True:
+    try:
+        nome = input('Nome do produto: ')
+        preco = float(input('Preço do produto: '))
+        
+        lista_compras.append({"nome": nome, "preco": preco})
+        
+        continuar = input('Deseja adicionar outro produto? [S/N]: ').strip().upper()
+        if continuar == 'N':
+            break
+            
+    except ValueError:
+        print('Preço inválido! Digite apenas números.')
+        
+item_barato =min(lista_compras, key=lambda item: item['preco'])
+        
+print(f"Total das compras: R${sum(item['preco'] for item in lista_compras):.2f}")
+print(f"No total foi contabilizado {len([item for item in lista_compras if item['preco'] > 1000])} produto(s) acima de mil reais.")
+print(f"O produto mais barato lista foi {item_barato['nome']} que custa R${item_barato['preco']:.2f}.")
