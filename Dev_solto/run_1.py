@@ -1563,7 +1563,7 @@ while True:
     except ValueError:
         print('Digite somente números inteiros!')"""
         
-while True:
+"""while True:
     try:
         print('~'*30)
         user = int(input('Digite um número: '))
@@ -1574,4 +1574,24 @@ while True:
             print('\nPrograma finalizado!\n')
             break
     except ValueError:
-        print('Digite somente números inteiros, e somente númeoros!!!')
+        print('Digite somente números inteiros, e somente númeoros!!!')"""
+        
+machine = random.randint(0, 10)
+        
+while True:
+    try:
+        user = int(input('Digite um número: '))
+        sorte = str(input('Par ou ímpar? [P/I]')).strip().upper()
+        
+        soma = user + machine
+        resultado = soma % 2 == 0
+        
+        if (resultado and sorte == 'P') or (not resultado and sorte == 'I'):
+            print(f'Você venceu! O número da máquina foi {machine} e a soma deu {soma}.\n')
+            
+        else:
+            print(f'Você perdeu! O número da máquina foi {machine} e a soma deu {soma}.')
+            break
+        
+    except ValueError:
+        print('Digite somente números inteiros!!!')
