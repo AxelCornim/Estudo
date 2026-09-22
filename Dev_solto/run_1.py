@@ -1576,7 +1576,7 @@ while True:
     except ValueError:
         print('Digite somente números inteiros, e somente númeoros!!!')"""
         
-machine = random.randint(0, 10)
+"""machine = random.randint(0, 10)
         
 while True:
     try:
@@ -1594,4 +1594,29 @@ while True:
             break
         
     except ValueError:
-        print('Digite somente números inteiros!!!')
+        print('Digite somente números inteiros!!!')"""
+        
+print('~'*30)
+print(' '*5 + 'Cadastro Pessoas')
+print('~'*30)
+
+turma = []
+
+while True:
+    try:
+        idade = int(input('Idade: '))
+        sexo = input('Sexo [M/F]: ').strip().upper()
+        
+        
+        turma.append({"idade": idade, "sexo": sexo})
+        
+        continuar = input('Deseja continuar? [S/N]: ').strip().upper()
+        if continuar == 'N':
+            break
+            
+    except ValueError:
+        print('Idade inválida! Digite apenas números inteiros.')
+        
+print(f"Total pessoas acima 18 anos foram {len([i for i in turma if i['idade'] >= 18])} pesso[as].")
+print(f"Temos total {len([i for i in turma if i['sexo'] == 'M'])} homen[s] cadastrado[s].")
+print(f"Ao todo temos {len([i for i in turma if i['sexo'] == 'F' and i['idade'] < 20])} mulher[s] com menos de 20 anos.")
