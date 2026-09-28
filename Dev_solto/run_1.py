@@ -1647,7 +1647,7 @@ print(f"Total das compras: R${sum(item['preco'] for item in lista_compras):.2f}"
 print(f"No total foi contabilizado {len([item for item in lista_compras if item['preco'] > 1000])} produto(s) acima de mil reais.")
 print(f"O produto mais barato lista foi {item_barato['nome']} que custa R${item_barato['preco']:.2f}.")"""
 
-print('#'*30)
+"""print('#'*30)
 print(' '*5 + 'Banco do Koshita')
 print('#'*30)
 
@@ -1666,4 +1666,53 @@ if cinquenta:
 if dez:
     print(f"Total de {dez:.1f} cédulas de R$10")
 if un:
-    print(f"Total de {un:.1f} cédulas de R$1")
+    print(f"Total de {un:.1f} cédulas de R$1")"""
+    
+"""print('-'*45)
+print(' '*5 + 'Escritor por Extenso de 0 até 20')
+print('-'*45)
+    
+numeros = [
+    'zero', 'um', 'dois', 'três', 'quatro', 'cinco',
+    'seis', 'sete', 'oito', 'nove', 'dez',
+    'onze', 'doze', 'treze', 'quatorze', 'quinze',
+    'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte'
+    ]
+    
+numero = int(input('Número: '))
+print(f"Você digitou o número {numeros[numero]}")"""
+
+"""times = (
+    'Athletico Paranaense',
+    'Atlético Mineiro',
+    'Bahia',
+    'Botafogo',
+    'Chapecoense',
+    'Corinthians',
+    'Coritiba SAF',
+    'Cruzeiro',
+    'Flamengo',
+    'Fluminense',
+    'Grêmio',
+    'Internacional',
+    'Mirassol',
+    'Palmeiras',
+    'Red Bull Bragantino',
+    'Remo',
+    'Santos FC',
+    'São Paulo',
+    'Vasco da Gama',
+    'Vitória'
+)
+
+print('='*30)
+print(f'Lista de times do Brasileirão: {', '.join(times)}')
+print('='*30)
+print(f'Os 5 primeiros são: {', '.join(times[:5])}')
+print('='*30)
+print(f'Os 4 últimos são: {', '.join(times[-4:])}')
+print('='*30)
+print(f'Times em ordem alfabética: {', '.join(sorted(times))}')
+print('='*30)
+print(f'O Vasco está na {times.index("Vasco da Gama") + 1} posição')"""
+
