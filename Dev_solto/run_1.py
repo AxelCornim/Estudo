@@ -1716,3 +1716,12 @@ print(f'Times em ordem alfabética: {', '.join(sorted(times))}')
 print('='*30)
 print(f'O Vasco está na {times.index("Vasco da Gama") + 1} posição')"""
 
+maquina = []
+
+for i in range(5):
+    temporario = random.randint(0, 20)
+    maquina.append(temporario)
+    
+print(f'Os valores sorteados foram {maquina}')
+print(f'O maior valor sorteado foi {max(maquina)}.')
+print(f'O menor valor sorteado foi {min(maquina)}.')
