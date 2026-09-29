@@ -1741,7 +1741,7 @@ for numero in lista:
     if numero % 2 == 0:
         print(f'Os valores pares digitados foram: {numero}.')"""
         
-listagem_precos = (
+"""listagem_precos = (
     ("Lápis", 1.75),
     ("Borracha", 2.00),
     ("Caderno", 15.90),
@@ -1758,4 +1758,23 @@ print("LISTAGEM DE PREÇOS".center(40))
 print("-" * 40)
 for nome, preco in listagem_precos:
     print(f"{nome:.<30}R$ {preco:>7.2f}")
-print("-" * 40)
+print("-" * 40)"""
+
+frase_de_aeiou = (
+    "APRENDER",
+    "PYTHON",
+    "SE",
+    "TORNA",
+    "ENTENDIANTE",
+    "SE",
+    "ACHAR",
+    "QUE",
+    "SABEMOS",
+    "TUDO"
+)
+
+vogais = ['A', 'E', 'I', 'O', 'U']
+
+for palavras in frase_de_aeiou:
+    encontradas = [vogal for vogal in vogais if vogal in palavras]
+    print(f'Na palavra {palavras} temos as vogais {encontradas}')
