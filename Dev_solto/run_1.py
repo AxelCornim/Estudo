@@ -1726,7 +1726,7 @@ print(f'Os valores sorteados foram {maquina}')
 print(f'O maior valor sorteado foi {max(maquina)}.')
 print(f'O menor valor sorteado foi {min(maquina)}.')"""
 
-lista = []
+"""lista = []
 
 for i in range(4):
     entrada = int(input(f'Digite o {i+1} número: '))
@@ -1739,4 +1739,23 @@ if 3 in lista:
     print(f'O número 3 apareceu na {lista.index(3)+1} posição.')
 for numero in lista:
     if numero % 2 == 0:
-        print(f'Os valores pares digitados foram: {numero}.')
+        print(f'Os valores pares digitados foram: {numero}.')"""
+        
+listagem_precos = (
+    ("Lápis", 1.75),
+    ("Borracha", 2.00),
+    ("Caderno", 15.90),
+    ("Estojo", 25.00),
+    ("Transferidor", 4.20),
+    ("Compasso", 9.99),
+    ("Mochila", 120.32),
+    ("Canetas", 22.30),
+    ("Livro", 34.90),
+)
+
+print("-" * 40)
+print("LISTAGEM DE PREÇOS".center(40))
+print("-" * 40)
+for nome, preco in listagem_precos:
+    print(f"{nome:.<30}R$ {preco:>7.2f}")
+print("-" * 40)
