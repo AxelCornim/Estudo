@@ -1716,7 +1716,7 @@ print(f'Times em ordem alfabética: {', '.join(sorted(times))}')
 print('='*30)
 print(f'O Vasco está na {times.index("Vasco da Gama") + 1} posição')"""
 
-maquina = []
+"""maquina = []
 
 for i in range(5):
     temporario = random.randint(0, 20)
@@ -1724,4 +1724,19 @@ for i in range(5):
     
 print(f'Os valores sorteados foram {maquina}')
 print(f'O maior valor sorteado foi {max(maquina)}.')
-print(f'O menor valor sorteado foi {min(maquina)}.')
+print(f'O menor valor sorteado foi {min(maquina)}.')"""
+
+lista = []
+
+for i in range(4):
+    entrada = int(input(f'Digite o {i+1} número: '))
+    lista.append(entrada)
+
+print(f'Você digitou os valores {lista}')
+if 9 in lista:
+    print(f'O número 9 apareceu {lista.count(9)} vezes.')
+if 3 in lista:
+    print(f'O número 3 apareceu na {lista.index(3)+1} posição.')
+for numero in lista:
+    if numero % 2 == 0:
+        print(f'Os valores pares digitados foram: {numero}.')
