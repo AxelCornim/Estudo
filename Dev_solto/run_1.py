@@ -1760,7 +1760,7 @@ for nome, preco in listagem_precos:
     print(f"{nome:.<30}R$ {preco:>7.2f}")
 print("-" * 40)"""
 
-frase_de_aeiou = (
+"""frase_de_aeiou = (
     "APRENDER",
     "PYTHON",
     "SE",
@@ -1777,4 +1777,20 @@ vogais = ['A', 'E', 'I', 'O', 'U']
 
 for palavras in frase_de_aeiou:
     encontradas = [vogal for vogal in vogais if vogal in palavras]
-    print(f'Na palavra {palavras} temos as vogais {encontradas}')
+    print(f'Na palavra {palavras} temos as vogais {encontradas}')"""
+    
+lista = []
+
+for i in range(5):
+    entrada = int(input(f'Digite o valor para a posição {i}: '))
+    lista.append(entrada)
+    
+maior = max(lista)
+menor = min(lista)
+
+posicao_maior = [i for i, x in enumerate(lista) if x == max(lista)]
+posicao_menor = [i for i, x in enumerate(lista) if x == min(lista)]
+    
+print(f'Você digitou os valores {lista}')
+print(f'O maior valor digitado foi {maior} nas posições {'...'.join(map(str, posicao_maior))}')
+print(f'O menor valor digitado foi {menor} nas posições {'...'.join(map(str, posicao_menor))}')
