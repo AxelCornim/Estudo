@@ -1779,7 +1779,7 @@ for palavras in frase_de_aeiou:
     encontradas = [vogal for vogal in vogais if vogal in palavras]
     print(f'Na palavra {palavras} temos as vogais {encontradas}')"""
     
-lista = []
+"""lista = []
 
 for i in range(5):
     entrada = int(input(f'Digite o valor para a posição {i}: '))
@@ -1793,4 +1793,22 @@ posicao_menor = [i for i, x in enumerate(lista) if x == min(lista)]
     
 print(f'Você digitou os valores {lista}')
 print(f'O maior valor digitado foi {maior} nas posições {'...'.join(map(str, posicao_maior))}')
-print(f'O menor valor digitado foi {menor} nas posições {'...'.join(map(str, posicao_menor))}')
+print(f'O menor valor digitado foi {menor} nas posições {'...'.join(map(str, posicao_menor))}')"""
+
+lista = []
+continuar = 'S'
+
+while continuar != 'N':
+    
+    user = int(input('Digite um número: '))
+    
+    if user not in lista:
+        lista.append(user)
+        print(f'Número {user} adicionado com sucesso!')
+    else:
+        print(f'Número {user} já existe na lista! Não será adicionado.')
+        
+    continuar = input('Deseja continuar ? [S/N]: ').strip().upper()
+        
+print('-='*30)
+print('Você digitou os valores', *sorted(lista), sep=', ')
