@@ -1795,7 +1795,7 @@ print(f'Você digitou os valores {lista}')
 print(f'O maior valor digitado foi {maior} nas posições {'...'.join(map(str, posicao_maior))}')
 print(f'O menor valor digitado foi {menor} nas posições {'...'.join(map(str, posicao_menor))}')"""
 
-lista = []
+"""lista = []
 continuar = 'S'
 
 while continuar != 'N':
@@ -1811,4 +1811,31 @@ while continuar != 'N':
     continuar = input('Deseja continuar ? [S/N]: ').strip().upper()
         
 print('-='*30)
-print('Você digitou os valores', *sorted(lista), sep=', ')
+print('Você digitou os valores', *sorted(lista), sep=', ')"""
+
+lista = []  
+
+for i in range(5):
+    
+    user = int(input('Digite um número: '))
+    
+    if user in lista:
+        print('Número coexistente! Digite novo número.')
+        continue
+    
+    posicao = 0
+        
+    while posicao <len(lista) and user > lista[posicao]:
+            posicao += 1
+        
+    if posicao == 0:
+        print('Adicionado no começo!')
+    elif posicao == len(lista):
+        print('Adicionado ao final!')
+    else:
+        print('Adiconado no meio!')
+        
+    lista.insert(posicao, user)
+
+print('-='*30)
+print('Você digitou os valores', *lista, sep=", ")
