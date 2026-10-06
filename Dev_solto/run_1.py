@@ -1813,7 +1813,7 @@ while continuar != 'N':
 print('-='*30)
 print('Você digitou os valores', *sorted(lista), sep=', ')"""
 
-lista = []  
+"""lista = []  
 
 for i in range(5):
     
@@ -1838,4 +1838,22 @@ for i in range(5):
     lista.insert(posicao, user)
 
 print('-='*30)
-print('Você digitou os valores', *lista, sep=", ")
+print('Você digitou os valores', *lista, sep=", ")"""
+
+lista = []
+continuar = 'S'
+
+while continuar != 'N':
+    
+    user = int(input('Digite um número: '))
+    lista.append(user)
+    
+    continuar = str(input('Deseja continuar ? [S/N]: ')).strip().upper()
+
+print('-='*30)
+print(f'Você digitou {len(lista)} elementos.')
+print(f'Os valores em ordem decrescente são: {sorted(lista, reverse=True)}')
+if 5 in lista:
+    print('O valor 5 faz parte da lista!')
+else:
+    print('O valor 5 não faz parte da lista!')
