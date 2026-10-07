@@ -1840,7 +1840,7 @@ for i in range(5):
 print('-='*30)
 print('Você digitou os valores', *lista, sep=", ")"""
 
-lista = []
+"""lista = []
 continuar = 'S'
 
 while continuar != 'N':
@@ -1856,4 +1856,26 @@ print(f'Os valores em ordem decrescente são: {sorted(lista, reverse=True)}')
 if 5 in lista:
     print('O valor 5 faz parte da lista!')
 else:
-    print('O valor 5 não faz parte da lista!')
+    print('O valor 5 não faz parte da lista!')"""
+    
+lista = []
+pares = []
+impares = []
+continuar = 'S'
+
+while continuar != 'N':
+    
+    user = int(input('Digite um número: '))
+    lista.append(user)
+    
+    if user % 2 == 0:
+        pares.append(user)
+    else:
+        impares.append(user)
+        
+    continuar = str(input('Deseja Continuar ? ("N" para sair): ')).strip().upper()
+    
+print('-='*30)
+print(f'A lista completa é {lista}')
+print(f'A lista pares são {pares}')
+print(f'A lista impares são {impares}')
