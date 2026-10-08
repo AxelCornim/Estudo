@@ -1858,7 +1858,7 @@ if 5 in lista:
 else:
     print('O valor 5 não faz parte da lista!')"""
     
-lista = []
+"""lista = []
 pares = []
 impares = []
 continuar = 'S'
@@ -1878,4 +1878,23 @@ while continuar != 'N':
 print('-='*30)
 print(f'A lista completa é {lista}')
 print(f'A lista pares são {pares}')
-print(f'A lista impares são {impares}')
+print(f'A lista impares são {impares}')"""
+
+frase = str(input('Digite sua expressão: ')).strip()
+
+total = 0
+
+for simbolo in frase:
+    
+    if simbolo == '(':
+        total += 1
+    elif simbolo == ')':
+        total -= 1 
+        
+    if total < 0:
+        break
+
+if total == 0:
+    print('Sua expressão está correta!')
+else:
+    print('Sua expressão está incorreta!')
