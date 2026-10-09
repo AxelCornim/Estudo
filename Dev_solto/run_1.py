@@ -1880,7 +1880,7 @@ print(f'A lista completa é {lista}')
 print(f'A lista pares são {pares}')
 print(f'A lista impares são {impares}')"""
 
-frase = str(input('Digite sua expressão: ')).strip()
+"""frase = str(input('Digite sua expressão: ')).strip()
 
 total = 0
 
@@ -1897,4 +1897,35 @@ for simbolo in frase:
 if total == 0:
     print('Sua expressão está correta!')
 else:
-    print('Sua expressão está incorreta!')
+    print('Sua expressão está incorreta!')"""
+    
+pessoas = list()
+pessoa = list()
+nome_max = []
+maxpes_nome = []
+nome_min = []
+menpes_nome = []
+
+while True:
+    
+    pessoa.append(str(input('Nome: ')).strip())
+    pessoa.append(int(input('Peso: ')))
+    
+    pessoas.append(pessoa[:])
+    pessoa.clear()
+    
+    continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()
+    if continuar == 'N':
+        break
+    else:
+        continue
+    
+nome_max = max(pessoa[1]for pessoa in pessoas)
+maxpes_nome = [pessoa[0] for pessoa in pessoas if pessoa[1] == nome_max]
+    
+nome_min = min(pessoa[1]for pessoa in pessoas)
+menpes_nome = [pessoa[0] for pessoa in pessoas if pessoa[1] == nome_min]
+    
+print('-='*30)
+print(f'O maior peso foi {nome_max} das pessoas {maxpes_nome}')
+print(f'O menor peso foi {nome_min} das pessoas {menpes_nome}')
