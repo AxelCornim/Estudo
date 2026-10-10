@@ -1899,7 +1899,7 @@ if total == 0:
 else:
     print('Sua expressão está incorreta!')"""
     
-pessoas = list()
+"""pessoas = list()
 pessoa = list()
 nome_max = []
 maxpes_nome = []
@@ -1928,4 +1928,19 @@ menpes_nome = [pessoa[0] for pessoa in pessoas if pessoa[1] == nome_min]
     
 print('-='*30)
 print(f'O maior peso foi {nome_max} das pessoas {maxpes_nome}')
-print(f'O menor peso foi {nome_min} das pessoas {menpes_nome}')
+print(f'O menor peso foi {nome_min} das pessoas {menpes_nome}')"""
+
+valores = [[], []]
+numero = 0
+
+for i in range(7):
+    
+    numero = int(input(f'Digite o {i+1}º número: '))
+    if numero % 2 == 0:
+        valores[0].append(numero)
+    else:
+        valores[1].append(numero)
+
+print('-='*30)
+print(f'Os números pares digitados foram {sorted(valores[0])}')
+print(f'Os números ímpares digitados foram {sorted(valores[1])}')
