@@ -1930,7 +1930,7 @@ print('-='*30)
 print(f'O maior peso foi {nome_max} das pessoas {maxpes_nome}')
 print(f'O menor peso foi {nome_min} das pessoas {menpes_nome}')"""
 
-valores = [[], []]
+"""valores = [[], []]
 numero = 0
 
 for i in range(7):
@@ -1943,4 +1943,19 @@ for i in range(7):
 
 print('-='*30)
 print(f'Os números pares digitados foram {sorted(valores[0])}')
-print(f'Os números ímpares digitados foram {sorted(valores[1])}')
+print(f'Os números ímpares digitados foram {sorted(valores[1])}')"""
+
+matriz = []
+
+for i in range(3):
+    linha = list()
+    
+    for j in range(3):
+        numero = int(input(f'Digite o valor para [{i}, {j}]: '))
+        linha.append(numero)
+    
+    matriz.append(linha)
+    
+print('-='*30)
+for linha in matriz:
+    print(' '.join(f'{num:^3}' for num in linha))
