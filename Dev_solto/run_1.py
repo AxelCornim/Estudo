@@ -1945,7 +1945,7 @@ print('-='*30)
 print(f'Os números pares digitados foram {sorted(valores[0])}')
 print(f'Os números ímpares digitados foram {sorted(valores[1])}')"""
 
-matriz = []
+"""matriz = []
 
 for i in range(3):
     linha = list()
@@ -1958,4 +1958,24 @@ for i in range(3):
     
 print('-='*30)
 for linha in matriz:
+    print(' '.join(f'{num:^3}' for num in linha))"""
+    
+matriz = []
+
+for i in range(3):
+    linha = list()
+    
+    for j in range(3):
+        numero = int(input(f'Digite o valor para [{i}, {j}]: '))
+        linha.append(numero)
+        
+    matriz.append(linha)
+    
+print('-='*30)
+for linha in matriz:
     print(' '.join(f'{num:^3}' for num in linha))
+print('-='*30)    
+
+print(f'A soma de todos os valores pares é {sum(num for linha in matriz for num in linha if num % 2 == 0)}')
+print(f'A soma dos valores da terceira coluna é {sum(linha[2] for linha in matriz)}')
+print(f'O maior valor da segunda linha é {max(matriz[1])}')
