@@ -1960,7 +1960,7 @@ print('-='*30)
 for linha in matriz:
     print(' '.join(f'{num:^3}' for num in linha))"""
     
-matriz = []
+"""matriz = []
 
 for i in range(3):
     linha = list()
@@ -1978,4 +1978,16 @@ print('-='*30)
 
 print(f'A soma de todos os valores pares é {sum(num for linha in matriz for num in linha if num % 2 == 0)}')
 print(f'A soma dos valores da terceira coluna é {sum(linha[2] for linha in matriz)}')
-print(f'O maior valor da segunda linha é {max(matriz[1])}')
+print(f'O maior valor da segunda linha é {max(matriz[1])}')"""
+
+print('-'*30)
+print(' '*5 + 'Jogo da Mega Sena')
+print('-'*30)
+
+usuario = int(input('Quantos jogos deseja gerar? '))
+ 
+print('-=-=-= Sorteando Jogos -=-=-=')
+for i in range(usuario):
+    time.sleep(1)
+    print(f'Jogo {i+1}: {sorted(random.sample(range(1, 61), 6))}')
+print('-=-=-= Boa Sorte! -=-=-=')
