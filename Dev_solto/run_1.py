@@ -1980,7 +1980,7 @@ print(f'A soma de todos os valores pares é {sum(num for linha in matriz for num
 print(f'A soma dos valores da terceira coluna é {sum(linha[2] for linha in matriz)}')
 print(f'O maior valor da segunda linha é {max(matriz[1])}')"""
 
-print('-'*30)
+"""print('-'*30)
 print(' '*5 + 'Jogo da Mega Sena')
 print('-'*30)
 
@@ -1990,4 +1990,32 @@ print('-=-=-= Sorteando Jogos -=-=-=')
 for i in range(usuario):
     time.sleep(1)
     print(f'Jogo {i+1}: {sorted(random.sample(range(1, 61), 6))}')
-print('-=-=-= Boa Sorte! -=-=-=')
+print('-=-=-= Boa Sorte! -=-=-=')"""
+
+alunos = list()
+continuar = 'S'
+
+while continuar != 'N':
+    nome = str(input('Nome: ')).strip()
+    nota1 = float(input('Nota 1: '))
+    nota2 = float(input('Nota 2: '))
+    media = (nota1 + nota2) / 2
+    alunos.append([nome, [nota1, nota2], media])
+    
+    continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()
+    if continuar == 'N':
+        break
+
+print('-='*30)
+print(f'{"Nº":<4} {"Nome":<10} {"Média":>8}')
+print('-'*30)
+for i, aluno in enumerate(alunos):
+    print(f'{i:<4} {aluno[0]:<10} {aluno[2]:>8.1f}')
+print('-'*30)
+while True:
+    opcao = int(input('\nMostrar notas de qual aluno? (999 interrompe): '))
+    if opcao == 999:
+        print('Finalizando...')
+        break
+    if 0 <= opcao < len(alunos):
+        print(f'Notas de {alunos[opcao][0]}: {alunos[opcao][1]}')
