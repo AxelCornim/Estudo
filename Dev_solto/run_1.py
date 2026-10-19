@@ -1992,7 +1992,7 @@ for i in range(usuario):
     print(f'Jogo {i+1}: {sorted(random.sample(range(1, 61), 6))}')
 print('-=-=-= Boa Sorte! -=-=-=')"""
 
-alunos = list()
+"""alunos = list()
 continuar = 'S'
 
 while continuar != 'N':
@@ -2018,4 +2018,20 @@ while True:
         print('Finalizando...')
         break
     if 0 <= opcao < len(alunos):
-        print(f'Notas de {alunos[opcao][0]}: {alunos[opcao][1]}')
+        print(f'Notas de {alunos[opcao][0]}: {alunos[opcao][1]}')"""
+        
+nome = str(input('Nome: ')).strip()
+media = float(input('Média: '))
+
+aluno = {
+    "nome": nome,
+    "media": media
+}
+
+print('-='*30)
+print(f'Nome é igual a {aluno["nome"]}')
+print(f'Média é igual a {aluno["media"]}')
+if aluno["media"] >= 5:
+    print('Situação é igual a Aprovado!')
+else:
+    print('Situação é igual a Reprovado!')
