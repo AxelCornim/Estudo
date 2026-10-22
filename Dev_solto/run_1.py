@@ -2020,7 +2020,7 @@ while True:
     if 0 <= opcao < len(alunos):
         print(f'Notas de {alunos[opcao][0]}: {alunos[opcao][1]}')"""
         
-nome = str(input('Nome: ')).strip()
+"""nome = str(input('Nome: ')).strip()
 media = float(input('Média: '))
 
 aluno = {
@@ -2034,4 +2034,28 @@ print(f'Média é igual a {aluno["media"]}')
 if aluno["media"] >= 5:
     print('Situação é igual a Aprovado!')
 else:
-    print('Situação é igual a Reprovado!')
+    print('Situação é igual a Reprovado!')"""
+    
+lista_jogadores = dict()
+
+print('Valores sorteados:') 
+for i in range(4):  
+    time.sleep(1)
+    valor_dado = random.randint(1, 4)
+    jogador = f'Jogador {i+1}'
+    print(f'{jogador} tirou {valor_dado} no dado.')
+    lista_jogadores[jogador] = valor_dado
+
+print('-='*30)
+print('  == Ranking dos jogadores ==')
+
+ranking = sorted(
+    lista_jogadores.items(),
+    key=lambda item: item[1],
+    reverse=True
+)
+
+for posicao, (jogador, valor) in enumerate(ranking, start=1):
+    time.sleep(1)
+    print(f'{posicao}º lugar: {jogador} com {valor} pontos.')
+        
