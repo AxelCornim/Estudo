@@ -1,4 +1,5 @@
 from os import system
+from datetime import date
 import random
 import math
 import time
@@ -2036,7 +2037,7 @@ if aluno["media"] >= 5:
 else:
     print('Situação é igual a Reprovado!')"""
     
-lista_jogadores = dict()
+"""lista_jogadores = dict()
 
 print('Valores sorteados:') 
 for i in range(4):  
@@ -2057,5 +2058,38 @@ ranking = sorted(
 
 for posicao, (jogador, valor) in enumerate(ranking, start=1):
     time.sleep(1)
-    print(f'{posicao}º lugar: {jogador} com {valor} pontos.')
-        
+    print(f'{posicao}º lugar: {jogador} com {valor} pontos.')"""
+    
+trabalhador = dict()
+
+trabalhador['nome'] = str(input('Nome: ')).strip()
+trabalhador['nascimento'] = int(input('Ano de nascimento: '))
+trabalhador['Trabaio'] = int(input('Carteira de trabalho (0 caso tem): '))
+
+if trabalhador['Trabaio'] > 0:
+    trabalhador['contratação'] = int(input('Ano de contratação: '))
+    trabalhador['salario'] = int(input('Salário: R$'))
+    
+anos_trabalhados = date.today().year - trabalhador['contratação']
+
+def calcular_aposentadoria(nascimento, contratacao):
+    ano_atual = date.today().year
+    idade = ano_atual - nascimento
+    anos_trabalhados = ano_atual - contratacao
+    anos_faltantes = max(0, 35 - anos_trabalhados)
+
+    return idade + anos_faltantes
+
+trabalhador['aposentadoria'] = calcular_aposentadoria(
+    trabalhador['nascimento'],
+    trabalhador['contratação']
+)
+
+print('-='*30)
+print(f'  - nome tem o valor {trabalhador["nome"]}')
+print(f'  - idade tem o valor {date.today().year - trabalhador["nascimento"]}')
+if trabalhador['Trabaio'] >= 0:
+    print(f'  - ctps tem o valor {trabalhador['Trabaio']}')
+    print(f'  - contratação tem o valor {trabalhador['contratação']}')
+    print(f'  - salário tem o valor {trabalhador['salario']}')
+    print(f'  - aposentadoria tem o valor {trabalhador["aposentadoria"]}')
