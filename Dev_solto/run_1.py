@@ -2060,7 +2060,7 @@ for posicao, (jogador, valor) in enumerate(ranking, start=1):
     time.sleep(1)
     print(f'{posicao}º lugar: {jogador} com {valor} pontos.')"""
     
-trabalhador = dict()
+"""trabalhador = dict()
 
 trabalhador['nome'] = str(input('Nome: ')).strip()
 trabalhador['nascimento'] = int(input('Ano de nascimento: '))
@@ -2092,4 +2092,29 @@ if trabalhador['Trabaio'] >= 0:
     print(f'  - ctps tem o valor {trabalhador['Trabaio']}')
     print(f'  - contratação tem o valor {trabalhador['contratação']}')
     print(f'  - salário tem o valor {trabalhador['salario']}')
-    print(f'  - aposentadoria tem o valor {trabalhador["aposentadoria"]}')
+    print(f'  - aposentadoria tem o valor {trabalhador["aposentadoria"]}')"""
+    
+jogador = dict()
+jogador['nome'] = str(input('Nome do jogador: '))
+
+repeticoes = int(input(f'Quantas partidas {jogador['nome']} jogou? '))
+jogador["gols"] = []
+for i in range(repeticoes):
+    gols = int(input(f'Quantos gols na partida {i}? '))
+    jogador['gols'].append(gols)
+    
+jogador['total'] = sum(jogador['gols'])
+    
+print('-='*30)
+print(jogador)
+print('-='*30)
+
+print(f'O campo nome tem o valor {jogador["nome"]}')
+print(f'O campo gols tem o valor {jogador["gols"]}')
+print(f'O campo total tem o valor {sum(jogador["gols"])}')
+print('-='*30)
+
+print(f'O jogador {jogador["nome"]} jogou {repeticoes}')
+for i, gols in enumerate(jogador["gols"], start=0):
+    print(f'  => Na partida {i}, fez {gols}')
+print(f'Foi um total de {sum(jogador["gols"])} gols.')
