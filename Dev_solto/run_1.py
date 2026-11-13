@@ -2094,7 +2094,7 @@ if trabalhador['Trabaio'] >= 0:
     print(f'  - salário tem o valor {trabalhador['salario']}')
     print(f'  - aposentadoria tem o valor {trabalhador["aposentadoria"]}')"""
     
-jogador = dict()
+"""jogador = dict()
 jogador['nome'] = str(input('Nome do jogador: '))
 
 repeticoes = int(input(f'Quantas partidas {jogador['nome']} jogou? '))
@@ -2111,10 +2111,46 @@ print('-='*30)
 
 print(f'O campo nome tem o valor {jogador["nome"]}')
 print(f'O campo gols tem o valor {jogador["gols"]}')
-print(f'O campo total tem o valor {sum(jogador["gols"])}')
+print(f'O campo total tem o valor {jogador["total"]}')
 print('-='*30)
 
 print(f'O jogador {jogador["nome"]} jogou {repeticoes}')
 for i, gols in enumerate(jogador["gols"], start=0):
     print(f'  => Na partida {i}, fez {gols}')
-print(f'Foi um total de {sum(jogador["gols"])} gols.')
+print(f'Foi um total de {jogador["total"]} gols.')"""
+
+pessoas = list()
+pessoa = dict()
+
+while True:
+    nome = str(input('Nome: ')).strip()
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [H/M]: ')).strip().upper()
+    
+    if sexo not in ('H', 'M'):
+        print('Sexo inválido! Digite H para homem ou M para mulher.')
+        continue
+    
+    pessoa['nome'] = nome
+    pessoa['idade'] = idade
+    pessoa['sexo'] = sexo
+    
+    pessoas.append(pessoa.copy())
+    
+    continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()
+    if continuar in ('S', 'N'):
+        break
+    print('Resposta inválida! Digite S ou N.')
+    if continuar == 'N':
+        break
+    
+print('-='*30)
+avg_idade = sum(p['idade'] for p in pessoas) / len(pessoas)
+print(f'Ao todo temos {len(pessoas)} pessoas cadastradas.')
+print(f'A media de idade é de {avg_idade:.2f} anos.')
+print(f'As mulheres cadastradas foram: {", ".join(p["nome"] for p in pessoas if p["sexo"] == "M")}')
+print('Lista de pessoas que estão acima da média de idade:')
+for p in pessoas:
+    if p['idade'] > avg_idade:
+        print(f'  nome = {p["nome"]}; idade = {p["idade"]}; sexo = {p["sexo"]}')
+print('<< ENCERRADO >>')
