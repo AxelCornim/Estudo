@@ -2119,7 +2119,7 @@ for i, gols in enumerate(jogador["gols"], start=0):
     print(f'  => Na partida {i}, fez {gols}')
 print(f'Foi um total de {jogador["total"]} gols.')"""
 
-pessoas = list()
+"""pessoas = list()
 pessoa = dict()
 
 while True:
@@ -2138,9 +2138,6 @@ while True:
     pessoas.append(pessoa.copy())
     
     continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()
-    if continuar in ('S', 'N'):
-        break
-    print('Resposta inválida! Digite S ou N.')
     if continuar == 'N':
         break
     
@@ -2153,4 +2150,46 @@ print('Lista de pessoas que estão acima da média de idade:')
 for p in pessoas:
     if p['idade'] > avg_idade:
         print(f'  nome = {p["nome"]}; idade = {p["idade"]}; sexo = {p["sexo"]}')
-print('<< ENCERRADO >>')
+print('<< ENCERRADO >>')"""
+
+jogadores = []
+
+while True:
+    
+    nome = str(input('Nome do jogador ')).strip()
+    
+    try:
+        partidas = int(input(f'Quantas partidas {nome} jogou? '))
+        gols = []
+        for i in range(partidas):
+            gols.append(int(input(f'Quantos gols {nome} marcou?')))
+            total_gols = sum(gols)
+    except ValueError:
+        print('Entrada inválida! Digite somente oque foi pedido.')
+        continue
+
+    jogadores.append(
+        {"nome": nome, "gols": gols, "total_gols": total_gols}
+)
+    
+    continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()
+    if continuar == 'N':
+        break
+    
+print('-='*30)
+print(f'{"cod":<4} {"nome":<10} {"gols":>8}')
+print('-'*30)
+for p, jogador in enumerate(jogadores):
+    print(f'{p:<4} {jogadores[p]["nome"]:<10} {jogadores[p]["gols"]:>8} {jogadores[p]["total_gols"]:>8}')
+print('-'*30)
+
+while True:
+    acesso = int(input('\nMostrar dados de qual jogador? (999 interrompe): '))
+    if acesso == 999:
+        print('Finalizando...')
+        break
+    if 0 <= acesso < len(jogadores):
+        print(f'Levantamento do jogador {jogadores[acesso]["nome"]}:')
+        for i, gols in enumerate(jogadores[acesso]["gols"], start=0):
+            print(f'  => Na partida {i}, fez {gols} gols.')
+    print('-'*30)
