@@ -2152,7 +2152,7 @@ for p in pessoas:
         print(f'  nome = {p["nome"]}; idade = {p["idade"]}; sexo = {p["sexo"]}')
 print('<< ENCERRADO >>')"""
 
-jogadores = []
+"""jogadores = []
 
 while True:
     
@@ -2192,4 +2192,20 @@ while True:
         print(f'Levantamento do jogador {jogadores[acesso]["nome"]}:')
         for i, gols in enumerate(jogadores[acesso]["gols"], start=0):
             print(f'  => Na partida {i}, fez {gols} gols.')
-    print('-'*30)
+    print('-'*30)"""
+
+
+print(' '*5 + 'Controle de Terrenos')
+print('-'*15)
+
+try:
+    largura = float(input('Largura (m): '))
+    comprimento = float(input('Comprimento (m): '))
+except ValueError:
+    print('Entrada inválida! Digite apenas números.')
+    
+def calcular_area(largura, comprimento):
+    area = largura * comprimento
+    return area
+
+print(f'A área de um terreno {largura:.1f} x {comprimento:.1f} é {calcular_area(largura, comprimento)} m².')
