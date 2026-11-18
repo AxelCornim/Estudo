@@ -2194,8 +2194,7 @@ while True:
             print(f'  => Na partida {i}, fez {gols} gols.')
     print('-'*30)"""
 
-
-print(' '*5 + 'Controle de Terrenos')
+"""print(' '*5 + 'Controle de Terrenos')
 print('-'*15)
 
 try:
@@ -2208,4 +2207,14 @@ def calcular_area(largura, comprimento):
     area = largura * comprimento
     return area
 
-print(f'A área de um terreno {largura:.1f} x {comprimento:.1f} é {calcular_area(largura, comprimento)} m².')
+print(f'A área de um terreno {largura:.1f} x {comprimento:.1f} é {calcular_area(largura, comprimento)} m².')"""
+
+def escreva(msg):
+    tamanho = len(msg) + 4
+    print('~' * tamanho)
+    print(f'  {msg}')
+    print('~' * tamanho)
+    
+escreva('Sistema de Controle de Pessoas')
+escreva('Cadastro de Pessoas')
+escreva('Lista de Pessoas Cadastradas')
