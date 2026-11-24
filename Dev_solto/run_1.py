@@ -2152,7 +2152,7 @@ for p in pessoas:
         print(f'  nome = {p["nome"]}; idade = {p["idade"]}; sexo = {p["sexo"]}')
 print('<< ENCERRADO >>')"""
 
-jogadores = []
+"""jogadores = []
 
 while True:
     
@@ -2192,4 +2192,65 @@ while True:
         print(f'Levantamento do jogador {jogadores[acesso]["nome"]}:')
         for i, gols in enumerate(jogadores[acesso]["gols"], start=0):
             print(f'  => Na partida {i}, fez {gols} gols.')
-    print('-'*30)
+    print('-'*30)"""
+
+"""print(' '*5 + 'Controle de Terrenos')
+print('-'*15)
+
+try:
+    largura = float(input('Largura (m): '))
+    comprimento = float(input('Comprimento (m): '))
+except ValueError:
+    print('Entrada inválida! Digite apenas números.')
+    
+def calcular_area(largura, comprimento):
+    area = largura * comprimento
+    return area
+
+print(f'A área de um terreno {largura:.1f} x {comprimento:.1f} é {calcular_area(largura, comprimento)} m².')"""
+
+"""def escreva(msg):
+    tamanho = len(msg) + 4
+    print('~' * tamanho)
+    print(f'  {msg}')
+    print('~' * tamanho)
+    
+escreva('Sistema de Controle de Pessoas')
+escreva('Cadastro de Pessoas')
+escreva('Lista de Pessoas Cadastradas')"""
+
+from time import sleep
+
+def contador(inicio, fim, passo):
+    if passo < 0:
+        passo *= -1
+    if passo == 0:
+        passo = 1
+
+    print("=" * 40)
+    print(f"Contagem de {inicio} até {fim} de {passo} em {passo}")
+
+    if inicio < fim:
+        cont = inicio
+        while cont <= fim:
+            print(f"{cont}", end=" ", flush=True)
+            sleep(0.3)
+            cont += passo
+        print("FIM!")
+    else:
+        cont = inicio
+        while cont >= fim:
+            print(f"{cont}", end=" ", flush=True)
+            sleep(0.3)
+            cont -= passo
+        print("FIM!")
+        
+contador(1, 10, 1)
+contador(10, 0, 2)
+
+print("=" * 40)
+print("Agora é sua vez de personalizar a contagem!")
+ini = int(input("Início: "))
+fim = int(input("Fim:    "))
+pas = int(input("Passo:  "))
+contador(ini, fim, pas)
